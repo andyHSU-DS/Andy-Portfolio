@@ -1,0 +1,70 @@
+[2022-02-26 03:33:21,587] {processor.py:163} INFO - Started process (PID=5352) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 03:33:21,587] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2022-02-26 03:33:21,587] {logging_mixin.py:109} INFO - [2022-02-26 03:33:21,587] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 03:33:21,599] {processor.py:654} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 03:33:21,606] {logging_mixin.py:109} INFO - [2022-02-26 03:33:21,605] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:33:21,609] {logging_mixin.py:109} INFO - [2022-02-26 03:33:21,609] {dag.py:2935} INFO - Setting next_dagrun for example_branch_labels to 2022-02-24 00:00:00+00:00
+[2022-02-26 03:33:21,611] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py took 0.025 seconds
+[2022-02-26 03:51:47,637] {processor.py:163} INFO - Started process (PID=5455) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 03:51:47,637] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2022-02-26 03:51:47,638] {logging_mixin.py:109} INFO - [2022-02-26 03:51:47,638] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 03:51:47,648] {processor.py:654} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 03:51:47,654] {logging_mixin.py:109} INFO - [2022-02-26 03:51:47,654] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:51:47,657] {logging_mixin.py:109} INFO - [2022-02-26 03:51:47,657] {dag.py:2935} INFO - Setting next_dagrun for example_branch_labels to 2022-02-24 00:00:00+00:00
+[2022-02-26 03:51:47,660] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py took 0.023 seconds
+[2022-02-26 04:23:05,768] {processor.py:163} INFO - Started process (PID=5522) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 04:23:05,768] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2022-02-26 04:23:05,769] {logging_mixin.py:109} INFO - [2022-02-26 04:23:05,769] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 04:23:05,779] {processor.py:654} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 04:23:05,785] {logging_mixin.py:109} INFO - [2022-02-26 04:23:05,785] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:23:05,788] {logging_mixin.py:109} INFO - [2022-02-26 04:23:05,788] {dag.py:2935} INFO - Setting next_dagrun for example_branch_labels to 2022-02-24 00:00:00+00:00
+[2022-02-26 04:23:05,791] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py took 0.023 seconds
+[2022-02-26 04:38:06,730] {processor.py:163} INFO - Started process (PID=5563) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 04:38:06,731] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2022-02-26 04:38:06,731] {logging_mixin.py:109} INFO - [2022-02-26 04:38:06,731] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 04:38:06,741] {processor.py:654} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 04:38:06,747] {logging_mixin.py:109} INFO - [2022-02-26 04:38:06,747] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:38:06,751] {logging_mixin.py:109} INFO - [2022-02-26 04:38:06,751] {dag.py:2935} INFO - Setting next_dagrun for example_branch_labels to 2022-02-24 00:00:00+00:00
+[2022-02-26 04:38:06,753] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py took 0.023 seconds
+[2022-02-26 04:53:06,472] {processor.py:163} INFO - Started process (PID=5599) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 04:53:06,472] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2022-02-26 04:53:06,472] {logging_mixin.py:109} INFO - [2022-02-26 04:53:06,472] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 04:53:06,482] {processor.py:654} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 04:53:06,489] {logging_mixin.py:109} INFO - [2022-02-26 04:53:06,489] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:53:06,492] {logging_mixin.py:109} INFO - [2022-02-26 04:53:06,492] {dag.py:2935} INFO - Setting next_dagrun for example_branch_labels to 2022-02-24 00:00:00+00:00
+[2022-02-26 04:53:06,495] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py took 0.023 seconds
+[2022-02-26 05:08:06,220] {processor.py:163} INFO - Started process (PID=5653) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:08:06,220] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2022-02-26 05:08:06,220] {logging_mixin.py:109} INFO - [2022-02-26 05:08:06,220] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:08:06,230] {processor.py:654} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:08:06,237] {logging_mixin.py:109} INFO - [2022-02-26 05:08:06,237] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:08:06,240] {logging_mixin.py:109} INFO - [2022-02-26 05:08:06,240] {dag.py:2935} INFO - Setting next_dagrun for example_branch_labels to 2022-02-24 00:00:00+00:00
+[2022-02-26 05:08:06,242] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py took 0.023 seconds
+[2022-02-26 05:23:06,088] {processor.py:163} INFO - Started process (PID=5689) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:23:06,088] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2022-02-26 05:23:06,088] {logging_mixin.py:109} INFO - [2022-02-26 05:23:06,088] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:23:06,098] {processor.py:654} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:23:06,105] {logging_mixin.py:109} INFO - [2022-02-26 05:23:06,105] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:23:06,108] {logging_mixin.py:109} INFO - [2022-02-26 05:23:06,108] {dag.py:2935} INFO - Setting next_dagrun for example_branch_labels to 2022-02-24 00:00:00+00:00
+[2022-02-26 05:23:06,111] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py took 0.023 seconds
+[2022-02-26 05:38:07,984] {processor.py:163} INFO - Started process (PID=5741) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:38:07,985] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2022-02-26 05:38:07,985] {logging_mixin.py:109} INFO - [2022-02-26 05:38:07,985] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:38:07,995] {processor.py:654} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:38:08,001] {logging_mixin.py:109} INFO - [2022-02-26 05:38:08,001] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:38:08,004] {logging_mixin.py:109} INFO - [2022-02-26 05:38:08,004] {dag.py:2935} INFO - Setting next_dagrun for example_branch_labels to 2022-02-24 00:00:00+00:00
+[2022-02-26 05:38:08,007] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py took 0.023 seconds
+[2022-02-26 05:53:06,916] {processor.py:163} INFO - Started process (PID=5775) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:53:06,916] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2022-02-26 05:53:06,916] {logging_mixin.py:109} INFO - [2022-02-26 05:53:06,916] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:53:06,926] {processor.py:654} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 05:53:06,933] {logging_mixin.py:109} INFO - [2022-02-26 05:53:06,933] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:53:06,936] {logging_mixin.py:109} INFO - [2022-02-26 05:53:06,936] {dag.py:2935} INFO - Setting next_dagrun for example_branch_labels to 2022-02-24 00:00:00+00:00
+[2022-02-26 05:53:06,939] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py took 0.023 seconds
+[2022-02-26 06:57:38,670] {processor.py:163} INFO - Started process (PID=5826) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 06:57:38,670] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py for tasks to queue
+[2022-02-26 06:57:38,670] {logging_mixin.py:109} INFO - [2022-02-26 06:57:38,670] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 06:57:38,680] {processor.py:654} INFO - DAG(s) dict_keys(['example_branch_labels']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py
+[2022-02-26 06:57:38,686] {logging_mixin.py:109} INFO - [2022-02-26 06:57:38,686] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 06:57:38,690] {logging_mixin.py:109} INFO - [2022-02-26 06:57:38,690] {dag.py:2935} INFO - Setting next_dagrun for example_branch_labels to 2022-02-24 00:00:00+00:00
+[2022-02-26 06:57:38,692] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_branch_labels.py took 0.023 seconds

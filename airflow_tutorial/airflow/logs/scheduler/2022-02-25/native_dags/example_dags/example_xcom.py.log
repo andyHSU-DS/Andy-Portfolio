@@ -1,0 +1,84 @@
+[2022-02-26 03:32:50,720] {processor.py:163} INFO - Started process (PID=5321) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 03:32:50,720] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 03:32:50,720] {logging_mixin.py:109} INFO - [2022-02-26 03:32:50,720] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 03:32:50,737] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 03:32:50,813] {logging_mixin.py:109} INFO - [2022-02-26 03:32:50,813] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:32:50,817] {logging_mixin.py:109} INFO - [2022-02-26 03:32:50,817] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 03:32:50,820] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.101 seconds
+[2022-02-26 03:33:38,750] {processor.py:163} INFO - Started process (PID=5367) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 03:33:38,751] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 03:33:38,751] {logging_mixin.py:109} INFO - [2022-02-26 03:33:38,751] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 03:33:38,767] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 03:33:38,837] {logging_mixin.py:109} INFO - [2022-02-26 03:33:38,837] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:33:38,840] {logging_mixin.py:109} INFO - [2022-02-26 03:33:38,840] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 03:33:38,844] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.094 seconds
+[2022-02-26 03:51:58,906] {processor.py:163} INFO - Started process (PID=5463) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 03:51:58,906] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 03:51:58,906] {logging_mixin.py:109} INFO - [2022-02-26 03:51:58,906] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 03:51:58,922] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 03:51:58,991] {logging_mixin.py:109} INFO - [2022-02-26 03:51:58,991] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:51:58,994] {logging_mixin.py:109} INFO - [2022-02-26 03:51:58,994] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 03:51:58,998] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2022-02-26 04:22:44,884] {processor.py:163} INFO - Started process (PID=5507) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 04:22:44,884] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 04:22:44,884] {logging_mixin.py:109} INFO - [2022-02-26 04:22:44,884] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 04:22:44,900] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 04:22:44,969] {logging_mixin.py:109} INFO - [2022-02-26 04:22:44,969] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:22:44,972] {logging_mixin.py:109} INFO - [2022-02-26 04:22:44,972] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 04:22:44,975] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2022-02-26 04:37:36,949] {processor.py:163} INFO - Started process (PID=5542) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 04:37:36,949] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 04:37:36,949] {logging_mixin.py:109} INFO - [2022-02-26 04:37:36,949] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 04:37:36,965] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 04:37:37,034] {logging_mixin.py:109} INFO - [2022-02-26 04:37:37,034] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:37:37,037] {logging_mixin.py:109} INFO - [2022-02-26 04:37:37,037] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 04:37:37,041] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2022-02-26 04:52:36,661] {processor.py:163} INFO - Started process (PID=5578) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 04:52:36,661] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 04:52:36,661] {logging_mixin.py:109} INFO - [2022-02-26 04:52:36,661] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 04:52:36,677] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 04:52:36,747] {logging_mixin.py:109} INFO - [2022-02-26 04:52:36,747] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:52:36,750] {logging_mixin.py:109} INFO - [2022-02-26 04:52:36,750] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 04:52:36,753] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2022-02-26 05:07:36,415] {processor.py:163} INFO - Started process (PID=5616) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:07:36,415] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 05:07:36,415] {logging_mixin.py:109} INFO - [2022-02-26 05:07:36,415] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:07:36,432] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:07:36,503] {logging_mixin.py:109} INFO - [2022-02-26 05:07:36,503] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:07:36,506] {logging_mixin.py:109} INFO - [2022-02-26 05:07:36,506] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 05:07:36,509] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.095 seconds
+[2022-02-26 05:22:36,252] {processor.py:163} INFO - Started process (PID=5667) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:22:36,252] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 05:22:36,253] {logging_mixin.py:109} INFO - [2022-02-26 05:22:36,253] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:22:36,268] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:22:36,337] {logging_mixin.py:109} INFO - [2022-02-26 05:22:36,337] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:22:36,340] {logging_mixin.py:109} INFO - [2022-02-26 05:22:36,340] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 05:22:36,344] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2022-02-26 05:37:38,487] {processor.py:163} INFO - Started process (PID=5709) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:37:38,487] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 05:37:38,487] {logging_mixin.py:109} INFO - [2022-02-26 05:37:38,487] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:37:38,503] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:37:38,572] {logging_mixin.py:109} INFO - [2022-02-26 05:37:38,572] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:37:38,575] {logging_mixin.py:109} INFO - [2022-02-26 05:37:38,575] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 05:37:38,579] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2022-02-26 05:52:37,118] {processor.py:163} INFO - Started process (PID=5754) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:52:37,118] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 05:52:37,118] {logging_mixin.py:109} INFO - [2022-02-26 05:52:37,118] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:52:37,134] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 05:52:37,203] {logging_mixin.py:109} INFO - [2022-02-26 05:52:37,202] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:52:37,205] {logging_mixin.py:109} INFO - [2022-02-26 05:52:37,205] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 05:52:37,209] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.091 seconds
+[2022-02-26 06:26:29,370] {processor.py:163} INFO - Started process (PID=5792) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 06:26:29,370] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 06:26:29,370] {logging_mixin.py:109} INFO - [2022-02-26 06:26:29,370] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 06:26:29,386] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 06:26:29,455] {logging_mixin.py:109} INFO - [2022-02-26 06:26:29,455] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 06:26:29,458] {logging_mixin.py:109} INFO - [2022-02-26 06:26:29,458] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 06:26:29,462] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds
+[2022-02-26 07:34:15,810] {processor.py:163} INFO - Started process (PID=5857) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 07:34:15,810] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2022-02-26 07:34:15,811] {logging_mixin.py:109} INFO - [2022-02-26 07:34:15,811] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 07:34:15,826] {processor.py:654} INFO - DAG(s) dict_keys(['example_xcom']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py
+[2022-02-26 07:34:15,896] {logging_mixin.py:109} INFO - [2022-02-26 07:34:15,895] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 07:34:15,899] {logging_mixin.py:109} INFO - [2022-02-26 07:34:15,899] {dag.py:2935} INFO - Setting next_dagrun for example_xcom to 2021-01-01T00:00:00+00:00
+[2022-02-26 07:34:15,902] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_xcom.py took 0.092 seconds

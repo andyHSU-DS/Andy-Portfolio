@@ -1,0 +1,70 @@
+[2022-02-26 03:33:17,595] {processor.py:163} INFO - Started process (PID=5349) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 03:33:17,595] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-02-26 03:33:17,595] {logging_mixin.py:109} INFO - [2022-02-26 03:33:17,595] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 03:33:17,608] {processor.py:654} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 03:33:17,616] {logging_mixin.py:109} INFO - [2022-02-26 03:33:17,616] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:33:17,619] {logging_mixin.py:109} INFO - [2022-02-26 03:33:17,619] {dag.py:2935} INFO - Setting next_dagrun for example_complex to None
+[2022-02-26 03:33:17,622] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.027 seconds
+[2022-02-26 03:51:42,803] {processor.py:163} INFO - Started process (PID=5451) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 03:51:42,803] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-02-26 03:51:42,803] {logging_mixin.py:109} INFO - [2022-02-26 03:51:42,803] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 03:51:42,815] {processor.py:654} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 03:51:42,823] {logging_mixin.py:109} INFO - [2022-02-26 03:51:42,823] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:51:42,826] {logging_mixin.py:109} INFO - [2022-02-26 03:51:42,826] {dag.py:2935} INFO - Setting next_dagrun for example_complex to None
+[2022-02-26 03:51:42,828] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.026 seconds
+[2022-02-26 04:23:01,767] {processor.py:163} INFO - Started process (PID=5519) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 04:23:01,767] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-02-26 04:23:01,767] {logging_mixin.py:109} INFO - [2022-02-26 04:23:01,767] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 04:23:01,780] {processor.py:654} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 04:23:01,787] {logging_mixin.py:109} INFO - [2022-02-26 04:23:01,787] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:23:01,790] {logging_mixin.py:109} INFO - [2022-02-26 04:23:01,790] {dag.py:2935} INFO - Setting next_dagrun for example_complex to None
+[2022-02-26 04:23:01,793] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.026 seconds
+[2022-02-26 04:38:02,850] {processor.py:163} INFO - Started process (PID=5560) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 04:38:02,850] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-02-26 04:38:02,850] {logging_mixin.py:109} INFO - [2022-02-26 04:38:02,850] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 04:38:02,862] {processor.py:654} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 04:38:02,870] {logging_mixin.py:109} INFO - [2022-02-26 04:38:02,870] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:38:02,873] {logging_mixin.py:109} INFO - [2022-02-26 04:38:02,873] {dag.py:2935} INFO - Setting next_dagrun for example_complex to None
+[2022-02-26 04:38:02,875] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.026 seconds
+[2022-02-26 04:53:02,573] {processor.py:163} INFO - Started process (PID=5596) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 04:53:02,573] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-02-26 04:53:02,573] {logging_mixin.py:109} INFO - [2022-02-26 04:53:02,573] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 04:53:02,585] {processor.py:654} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 04:53:02,593] {logging_mixin.py:109} INFO - [2022-02-26 04:53:02,593] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:53:02,596] {logging_mixin.py:109} INFO - [2022-02-26 04:53:02,596] {dag.py:2935} INFO - Setting next_dagrun for example_complex to None
+[2022-02-26 04:53:02,599] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.026 seconds
+[2022-02-26 05:08:02,327] {processor.py:163} INFO - Started process (PID=5634) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:08:02,327] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-02-26 05:08:02,327] {logging_mixin.py:109} INFO - [2022-02-26 05:08:02,327] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:08:02,340] {processor.py:654} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:08:02,347] {logging_mixin.py:109} INFO - [2022-02-26 05:08:02,347] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:08:02,350] {logging_mixin.py:109} INFO - [2022-02-26 05:08:02,350] {dag.py:2935} INFO - Setting next_dagrun for example_complex to None
+[2022-02-26 05:08:02,353] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.026 seconds
+[2022-02-26 05:23:02,184] {processor.py:163} INFO - Started process (PID=5686) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:23:02,184] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-02-26 05:23:02,184] {logging_mixin.py:109} INFO - [2022-02-26 05:23:02,184] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:23:02,196] {processor.py:654} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:23:02,204] {logging_mixin.py:109} INFO - [2022-02-26 05:23:02,204] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:23:02,207] {logging_mixin.py:109} INFO - [2022-02-26 05:23:02,207] {dag.py:2935} INFO - Setting next_dagrun for example_complex to None
+[2022-02-26 05:23:02,210] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.026 seconds
+[2022-02-26 05:38:03,176] {processor.py:163} INFO - Started process (PID=5738) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:38:03,176] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-02-26 05:38:03,176] {logging_mixin.py:109} INFO - [2022-02-26 05:38:03,176] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:38:03,188] {processor.py:654} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:38:03,196] {logging_mixin.py:109} INFO - [2022-02-26 05:38:03,196] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:38:03,198] {logging_mixin.py:109} INFO - [2022-02-26 05:38:03,198] {dag.py:2935} INFO - Setting next_dagrun for example_complex to None
+[2022-02-26 05:38:03,201] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.026 seconds
+[2022-02-26 05:53:02,911] {processor.py:163} INFO - Started process (PID=5772) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:53:02,911] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-02-26 05:53:02,911] {logging_mixin.py:109} INFO - [2022-02-26 05:53:02,911] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:53:02,923] {processor.py:654} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 05:53:02,931] {logging_mixin.py:109} INFO - [2022-02-26 05:53:02,931] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:53:02,934] {logging_mixin.py:109} INFO - [2022-02-26 05:53:02,934] {dag.py:2935} INFO - Setting next_dagrun for example_complex to None
+[2022-02-26 05:53:02,937] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.026 seconds
+[2022-02-26 06:57:34,770] {processor.py:163} INFO - Started process (PID=5823) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 06:57:34,770] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-02-26 06:57:34,770] {logging_mixin.py:109} INFO - [2022-02-26 06:57:34,770] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 06:57:34,782] {processor.py:654} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2022-02-26 06:57:34,790] {logging_mixin.py:109} INFO - [2022-02-26 06:57:34,790] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 06:57:34,793] {logging_mixin.py:109} INFO - [2022-02-26 06:57:34,792] {dag.py:2935} INFO - Setting next_dagrun for example_complex to None
+[2022-02-26 06:57:34,796] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.026 seconds

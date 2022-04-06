@@ -1,0 +1,44 @@
+[2022-02-24 08:00:03,064] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-23T00:00:00+00:00 [queued]>
+[2022-02-24 08:00:03,066] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-23T00:00:00+00:00 [queued]>
+[2022-02-24 08:00:03,066] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-24 08:00:03,066] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-24 08:00:03,066] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-24 08:00:03,069] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): download_prices> on 2022-02-23 00:00:00+00:00
+[2022-02-24 08:00:03,070] {standard_task_runner.py:52} INFO - Started process 33334 to run task
+[2022-02-24 08:00:03,072] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'scheduled__2022-02-23T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/download_stock_price.py', '--cfg-path', '/var/folders/7y/kt4ctk651rggrj3r9z9t02wc0000gp/T/tmpns8_9_1r', '--error-file', '/var/folders/7y/kt4ctk651rggrj3r9z9t02wc0000gp/T/tmpb9rwzmuv']
+[2022-02-24 08:00:03,073] {standard_task_runner.py:77} INFO - Job 13: Subtask download_prices
+[2022-02-24 08:00:03,086] {logging_mixin.py:109} INFO - Running <TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-23T00:00:00+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-24 08:00:03,097] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=andy.hsu871226@gmail.com
+AIRFLOW_CTX_DAG_OWNER=andyhsu
+AIRFLOW_CTX_DAG_ID=Download_Stock_Price
+AIRFLOW_CTX_TASK_ID=download_prices
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-23T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-23T00:00:00+00:00
+[2022-02-24 08:00:03,100] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-02-24 08:00:03,100] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2022-02-24 08:00:03,101] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2022-02-24 08:00:03,101] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2022-02-24 08:00:03,101] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2022-02-24 08:00:03,102] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-02-24 08:00:03,102] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2022-02-24 08:00:03,102] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2022-02-24 08:00:03,102] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2022-02-24 08:00:03,103] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-02-24 08:00:03,103] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2022-02-24 08:00:03,103] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-02-24 08:00:03,105] {logging_mixin.py:109} INFO - None
+[2022-02-24 08:00:03,110] {logging_mixin.py:109} INFO - - IBM: No data found for this date range, symbol may be delisted
+[2022-02-24 08:00:03,112] {logging_mixin.py:109} INFO - Finished dowloading priceIBM
+[2022-02-24 08:00:03,114] {logging_mixin.py:109} INFO - - GE: No data found for this date range, symbol may be delisted
+[2022-02-24 08:00:03,115] {logging_mixin.py:109} INFO - Finished dowloading priceGE
+[2022-02-24 08:00:03,117] {logging_mixin.py:109} INFO - - AAPL: No data found for this date range, symbol may be delisted
+[2022-02-24 08:00:03,117] {logging_mixin.py:109} INFO - Finished dowloading priceAAPL
+[2022-02-24 08:00:03,120] {logging_mixin.py:109} INFO - - MSFT: No data found for this date range, symbol may be delisted
+[2022-02-24 08:00:03,120] {logging_mixin.py:109} INFO - Finished dowloading priceMSFT
+[2022-02-24 08:00:03,120] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-24 08:00:03,122] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=Download_Stock_Price, task_id=download_prices, execution_date=20220223T000000, start_date=20220224T000003, end_date=20220224T000003
+[2022-02-24 08:00:03,146] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-24 08:00:03,154] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

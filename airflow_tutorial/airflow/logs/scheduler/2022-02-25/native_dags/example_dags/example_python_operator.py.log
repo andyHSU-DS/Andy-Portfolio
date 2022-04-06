@@ -1,0 +1,84 @@
+[2022-02-26 03:33:05,258] {processor.py:163} INFO - Started process (PID=5341) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 03:33:05,258] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 03:33:05,258] {logging_mixin.py:109} INFO - [2022-02-26 03:33:05,258] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 03:33:05,274] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 03:33:05,280] {logging_mixin.py:109} INFO - [2022-02-26 03:33:05,280] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:33:05,283] {logging_mixin.py:109} INFO - [2022-02-26 03:33:05,283] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 03:33:05,286] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.028 seconds
+[2022-02-26 03:33:55,268] {processor.py:163} INFO - Started process (PID=5392) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 03:33:55,269] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 03:33:55,270] {logging_mixin.py:109} INFO - [2022-02-26 03:33:55,270] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 03:33:55,286] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 03:33:55,292] {logging_mixin.py:109} INFO - [2022-02-26 03:33:55,292] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:33:55,295] {logging_mixin.py:109} INFO - [2022-02-26 03:33:55,295] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 03:33:55,298] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.030 seconds
+[2022-02-26 04:07:34,823] {processor.py:163} INFO - Started process (PID=5479) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:07:34,823] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 04:07:34,823] {logging_mixin.py:109} INFO - [2022-02-26 04:07:34,823] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:07:34,839] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:07:34,845] {logging_mixin.py:109} INFO - [2022-02-26 04:07:34,845] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:07:34,848] {logging_mixin.py:109} INFO - [2022-02-26 04:07:34,848] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 04:07:34,850] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.028 seconds
+[2022-02-26 04:22:59,311] {processor.py:163} INFO - Started process (PID=5517) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:22:59,311] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 04:22:59,311] {logging_mixin.py:109} INFO - [2022-02-26 04:22:59,311] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:22:59,327] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:22:59,333] {logging_mixin.py:109} INFO - [2022-02-26 04:22:59,333] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:22:59,336] {logging_mixin.py:109} INFO - [2022-02-26 04:22:59,336] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 04:22:59,339] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.028 seconds
+[2022-02-26 04:37:51,128] {processor.py:163} INFO - Started process (PID=5552) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:37:51,128] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 04:37:51,128] {logging_mixin.py:109} INFO - [2022-02-26 04:37:51,128] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:37:51,144] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:37:51,150] {logging_mixin.py:109} INFO - [2022-02-26 04:37:51,150] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:37:51,153] {logging_mixin.py:109} INFO - [2022-02-26 04:37:51,153] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 04:37:51,156] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.028 seconds
+[2022-02-26 04:52:51,265] {processor.py:163} INFO - Started process (PID=5588) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:52:51,265] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 04:52:51,266] {logging_mixin.py:109} INFO - [2022-02-26 04:52:51,266] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:52:51,281] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 04:52:51,287] {logging_mixin.py:109} INFO - [2022-02-26 04:52:51,287] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:52:51,290] {logging_mixin.py:109} INFO - [2022-02-26 04:52:51,290] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 04:52:51,293] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.028 seconds
+[2022-02-26 05:07:51,024] {processor.py:163} INFO - Started process (PID=5626) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:07:51,024] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 05:07:51,024] {logging_mixin.py:109} INFO - [2022-02-26 05:07:51,024] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:07:51,039] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:07:51,046] {logging_mixin.py:109} INFO - [2022-02-26 05:07:51,046] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:07:51,048] {logging_mixin.py:109} INFO - [2022-02-26 05:07:51,048] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 05:07:51,052] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.028 seconds
+[2022-02-26 05:22:50,881] {processor.py:163} INFO - Started process (PID=5678) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:22:50,881] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 05:22:50,881] {logging_mixin.py:109} INFO - [2022-02-26 05:22:50,881] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:22:50,897] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:22:50,903] {logging_mixin.py:109} INFO - [2022-02-26 05:22:50,903] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:22:50,906] {logging_mixin.py:109} INFO - [2022-02-26 05:22:50,906] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 05:22:50,909] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.028 seconds
+[2022-02-26 05:37:51,970] {processor.py:163} INFO - Started process (PID=5730) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:37:51,970] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 05:37:51,971] {logging_mixin.py:109} INFO - [2022-02-26 05:37:51,971] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:37:51,986] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:37:51,992] {logging_mixin.py:109} INFO - [2022-02-26 05:37:51,992] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:37:51,995] {logging_mixin.py:109} INFO - [2022-02-26 05:37:51,995] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 05:37:51,998] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.028 seconds
+[2022-02-26 05:52:51,619] {processor.py:163} INFO - Started process (PID=5764) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:52:51,619] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 05:52:51,619] {logging_mixin.py:109} INFO - [2022-02-26 05:52:51,619] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:52:51,635] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 05:52:51,641] {logging_mixin.py:109} INFO - [2022-02-26 05:52:51,641] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:52:51,644] {logging_mixin.py:109} INFO - [2022-02-26 05:52:51,644] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 05:52:51,646] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.028 seconds
+[2022-02-26 06:41:43,756] {processor.py:163} INFO - Started process (PID=5808) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 06:41:43,756] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 06:41:43,756] {logging_mixin.py:109} INFO - [2022-02-26 06:41:43,756] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 06:41:43,771] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 06:41:43,778] {logging_mixin.py:109} INFO - [2022-02-26 06:41:43,778] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 06:41:43,781] {logging_mixin.py:109} INFO - [2022-02-26 06:41:43,781] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 06:41:43,783] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.028 seconds
+[2022-02-26 07:50:24,130] {processor.py:163} INFO - Started process (PID=5869) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 07:50:24,130] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2022-02-26 07:50:24,130] {logging_mixin.py:109} INFO - [2022-02-26 07:50:24,130] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 07:50:24,146] {processor.py:654} INFO - DAG(s) dict_keys(['example_python_operator']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py
+[2022-02-26 07:50:24,152] {logging_mixin.py:109} INFO - [2022-02-26 07:50:24,152] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 07:50:24,155] {logging_mixin.py:109} INFO - [2022-02-26 07:50:24,155] {dag.py:2935} INFO - Setting next_dagrun for example_python_operator to None
+[2022-02-26 07:50:24,158] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_python_operator.py took 0.028 seconds

@@ -1,0 +1,65 @@
+[2022-02-26 03:32:38,961] {processor.py:163} INFO - Started process (PID=5312) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:32:38,961] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 03:32:38,961] {logging_mixin.py:109} INFO - [2022-02-26 03:32:38,961] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:32:38,970] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:32:38,970] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds
+[2022-02-26 03:33:29,093] {processor.py:163} INFO - Started process (PID=5359) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:33:29,093] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 03:33:29,094] {logging_mixin.py:109} INFO - [2022-02-26 03:33:29,094] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:33:29,102] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:33:29,102] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.010 seconds
+[2022-02-26 03:34:07,539] {processor.py:163} INFO - Started process (PID=5410) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:34:07,539] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 03:34:07,540] {logging_mixin.py:109} INFO - [2022-02-26 03:34:07,540] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:34:07,548] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:34:07,548] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds
+[2022-02-26 03:51:54,024] {processor.py:163} INFO - Started process (PID=5460) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:51:54,024] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 03:51:54,024] {logging_mixin.py:109} INFO - [2022-02-26 03:51:54,024] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:51:54,032] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 03:51:54,032] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds
+[2022-02-26 04:22:34,700] {processor.py:163} INFO - Started process (PID=5489) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 04:22:34,700] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 04:22:34,700] {logging_mixin.py:109} INFO - [2022-02-26 04:22:34,700] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 04:22:34,708] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 04:22:34,709] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds
+[2022-02-26 04:37:27,251] {processor.py:163} INFO - Started process (PID=5531) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 04:37:27,251] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 04:37:27,252] {logging_mixin.py:109} INFO - [2022-02-26 04:37:27,251] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 04:37:27,259] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 04:37:27,260] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds
+[2022-02-26 04:52:26,996] {processor.py:163} INFO - Started process (PID=5570) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 04:52:26,996] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 04:52:26,996] {logging_mixin.py:109} INFO - [2022-02-26 04:52:26,996] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 04:52:27,004] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 04:52:27,005] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds
+[2022-02-26 05:07:26,746] {processor.py:163} INFO - Started process (PID=5609) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:07:26,746] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 05:07:26,746] {logging_mixin.py:109} INFO - [2022-02-26 05:07:26,746] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:07:26,754] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:07:26,754] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds
+[2022-02-26 05:22:26,583] {processor.py:163} INFO - Started process (PID=5660) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:22:26,583] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 05:22:26,583] {logging_mixin.py:109} INFO - [2022-02-26 05:22:26,583] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:22:26,592] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:22:26,592] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds
+[2022-02-26 05:37:28,037] {processor.py:163} INFO - Started process (PID=5698) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:37:28,038] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 05:37:28,038] {logging_mixin.py:109} INFO - [2022-02-26 05:37:28,038] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:37:28,046] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:37:28,046] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds
+[2022-02-26 05:52:26,673] {processor.py:163} INFO - Started process (PID=5747) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:52:26,674] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 05:52:26,674] {logging_mixin.py:109} INFO - [2022-02-26 05:52:26,674] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:52:26,682] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 05:52:26,682] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds
+[2022-02-26 06:10:56,676] {processor.py:163} INFO - Started process (PID=5783) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 06:10:56,677] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 06:10:56,677] {logging_mixin.py:109} INFO - [2022-02-26 06:10:56,677] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 06:10:56,685] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 06:10:56,685] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds
+[2022-02-26 07:14:55,629] {processor.py:163} INFO - Started process (PID=5832) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 07:14:55,629] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2022-02-26 07:14:55,629] {logging_mixin.py:109} INFO - [2022-02-26 07:14:55,629] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 07:14:55,637] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py
+[2022-02-26 07:14:55,638] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/subdags/subdag.py took 0.009 seconds

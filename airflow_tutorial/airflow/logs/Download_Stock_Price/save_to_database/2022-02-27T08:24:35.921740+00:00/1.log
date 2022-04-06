@@ -1,0 +1,44 @@
+[2022-02-27 16:24:43,233] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T08:24:35.921740+00:00 [queued]>
+[2022-02-27 16:24:43,249] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T08:24:35.921740+00:00 [queued]>
+[2022-02-27 16:24:43,250] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 16:24:43,250] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-27 16:24:43,250] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-27 16:24:43,266] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): save_to_database> on 2022-02-27 08:24:35.921740+00:00
+[2022-02-27 16:24:43,269] {standard_task_runner.py:52} INFO - Started process 53154 to run task
+[2022-02-27 16:24:43,272] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T08:24:35.921740+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/download_stock_price.py', '--cfg-path', '/var/folders/7y/kt4ctk651rggrj3r9z9t02wc0000gp/T/tmp09mzcznj', '--error-file', '/var/folders/7y/kt4ctk651rggrj3r9z9t02wc0000gp/T/tmp715xtjb0']
+[2022-02-27 16:24:43,273] {standard_task_runner.py:77} INFO - Job 19: Subtask save_to_database
+[2022-02-27 16:24:43,401] {logging_mixin.py:109} INFO - Running <TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T08:24:35.921740+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-27 16:24:43,498] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=andyhsu
+AIRFLOW_CTX_DAG_ID=Download_Stock_Price
+AIRFLOW_CTX_TASK_ID=save_to_database
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-27T08:24:35.921740+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-27T08:24:35.921740+00:00
+[2022-02-27 16:24:43,503] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-02-27 16:24:43,504] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2022-02-27 16:24:43,504] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2022-02-27 16:24:43,505] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2022-02-27 16:24:43,505] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2022-02-27 16:24:43,506] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-02-27 16:24:43,507] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2022-02-27 16:24:43,507] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2022-02-27 16:24:43,508] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2022-02-27 16:24:43,508] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-02-27 16:24:43,509] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2022-02-27 16:24:43,509] {logging_mixin.py:109} WARNING - /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/***/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-02-27 16:24:43,599] {logging_mixin.py:109} INFO - IBM lengeth=22   ['IBM', '2022-01-27', '132.0691647317324', '133.1461877899524', '130.50796829012884', '130.94273376464844']
+[2022-02-27 16:24:43,616] {logging_mixin.py:109} INFO - 22 record inserted
+[2022-02-27 16:24:43,617] {logging_mixin.py:109} INFO - GE lengeth=22   ['GE', '2022-01-27', '90.0', '91.7699966430664', '88.06999969482422', '89.9000015258789']
+[2022-02-27 16:24:43,885] {logging_mixin.py:109} INFO - 22 record inserted
+[2022-02-27 16:24:43,886] {logging_mixin.py:109} INFO - AAPL lengeth=22   ['AAPL', '2022-01-27', '162.2432961712072', '163.63152693075827', '158.07860389255396', '159.0174102783203']
+[2022-02-27 16:24:43,893] {logging_mixin.py:109} INFO - 22 record inserted
+[2022-02-27 16:24:43,894] {logging_mixin.py:109} INFO - FB lengeth=22   ['FB', '2022-01-27', '297.75', '301.7099914550781', '294.260009765625', '294.6400146484375']
+[2022-02-27 16:24:43,903] {logging_mixin.py:109} INFO - 22 record inserted
+[2022-02-27 16:24:43,903] {logging_mixin.py:109} INFO - MSFT lengeth=22   ['MSFT', '2022-01-27', '302.0354712587854', '306.66588088225836', '297.31522054832226', '299.2212829589844']
+[2022-02-27 16:24:43,911] {logging_mixin.py:109} INFO - 22 record inserted
+[2022-02-27 16:24:43,914] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-27 16:24:43,951] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=Download_Stock_Price, task_id=save_to_database, execution_date=20220227T082435, start_date=20220227T082443, end_date=20220227T082443
+[2022-02-27 16:24:44,013] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-27 16:24:44,129] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

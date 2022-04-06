@@ -1,0 +1,27 @@
+[2022-02-23 23:10:46,931] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-23T15:10:44.181160+00:00 [queued]>
+[2022-02-23 23:10:46,935] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-23T15:10:44.181160+00:00 [queued]>
+[2022-02-23 23:10:46,935] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-23 23:10:46,935] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-23 23:10:46,935] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-23 23:10:46,939] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): download_prices> on 2022-02-23 15:10:44.181160+00:00
+[2022-02-23 23:10:46,942] {standard_task_runner.py:52} INFO - Started process 23992 to run task
+[2022-02-23 23:10:46,945] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-23T15:10:44.181160+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/download_stock_price.py', '--cfg-path', '/var/folders/7y/kt4ctk651rggrj3r9z9t02wc0000gp/T/tmpqmbxiy09', '--error-file', '/var/folders/7y/kt4ctk651rggrj3r9z9t02wc0000gp/T/tmpyklrkhxg']
+[2022-02-23 23:10:46,946] {standard_task_runner.py:77} INFO - Job 5: Subtask download_prices
+[2022-02-23 23:10:46,962] {logging_mixin.py:109} INFO - Running <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-23T15:10:44.181160+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2022-02-23 23:10:46,975] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=andy.hsu871226@gmail.com
+AIRFLOW_CTX_DAG_OWNER=andyhsu
+AIRFLOW_CTX_DAG_ID=Download_Stock_Price
+AIRFLOW_CTX_TASK_ID=download_prices
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-23T15:10:44.181160+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-23T15:10:44.181160+00:00
+[2022-02-23 23:10:47,702] {logging_mixin.py:109} INFO - <class 'pandas.core.frame.DataFrame'>
+[2022-02-23 23:10:47,702] {logging_mixin.py:109} INFO - (9062, 7)
+[2022-02-23 23:10:47,702] {logging_mixin.py:109} INFO - /
+[2022-02-23 23:10:48,032] {logging_mixin.py:109} INFO - Finished dowloading price
+[2022-02-23 23:10:48,032] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-23 23:10:48,035] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=Download_Stock_Price, task_id=download_prices, execution_date=20220223T151044, start_date=20220223T151046, end_date=20220223T151048
+[2022-02-23 23:10:48,069] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-23 23:10:48,077] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

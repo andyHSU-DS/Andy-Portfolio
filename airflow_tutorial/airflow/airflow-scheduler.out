@@ -1,0 +1,524 @@
+[[34m2022-02-27 13:34:41,309[0m] {[34mscheduler_job.py:[0m596} INFO[0m - Starting the scheduler[0m
+[[34m2022-02-27 13:34:41,309[0m] {[34mscheduler_job.py:[0m601} INFO[0m - Processing each file at most -1 times[0m
+[[34m2022-02-27 13:34:41,313[0m] {[34mmanager.py:[0m163} INFO[0m - Launched DagFileProcessorManager with pid: 30032[0m
+[[34m2022-02-27 13:34:41,314[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 13:34:41,860[0m] {[34msettings.py:[0m52} INFO[0m - Configured default timezone Timezone('UTC')[0m
+[[34m2022-02-27 13:35:18,473[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to 2022-02-26T00:00:00+00:00[0m
+[[34m2022-02-27 13:35:18,618[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-25T00:00:00+00:00 [scheduled]>[0m
+[[34m2022-02-27 13:35:18,621[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 13:35:18,622[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 13:35:18,622[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-25T00:00:00+00:00 [scheduled]>[0m
+[[34m2022-02-27 13:35:18,625[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='scheduled__2022-02-25T00:00:00+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 13:35:18,626[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'scheduled__2022-02-25T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 13:35:18,630[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'scheduled__2022-02-25T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 13:35:19,298[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 13:35:19,593[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-25T00:00:00+00:00 [queued]> on host AndydeMacBook-Air.local
+[[34m2022-02-27 13:35:20,333[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=scheduled__2022-02-25T00:00:00+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 13:35:20,343[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=scheduled__2022-02-25T00:00:00+00:00, run_start_date=2022-02-27 05:35:19.775025+00:00, run_end_date=2022-02-27 05:35:20.075268+00:00, run_duration=0.300243, state=up_for_retry, executor_state=success, try_number=1, max_tries=1, job_id=2, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 13:35:20,382[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to 2022-02-27T00:00:00+00:00[0m
+[[34m2022-02-27 13:35:20,482[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-26T00:00:00+00:00 [scheduled]>[0m
+[[34m2022-02-27 13:35:20,487[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 13:35:20,487[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 13:35:20,487[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-26T00:00:00+00:00 [scheduled]>[0m
+[[34m2022-02-27 13:35:20,492[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='scheduled__2022-02-26T00:00:00+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 13:35:20,492[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'scheduled__2022-02-26T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 13:35:20,496[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'scheduled__2022-02-26T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 13:35:21,190[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 13:35:21,476[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-26T00:00:00+00:00 [queued]> on host AndydeMacBook-Air.local
+[[34m2022-02-27 13:35:22,134[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=scheduled__2022-02-26T00:00:00+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 13:35:22,145[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=scheduled__2022-02-26T00:00:00+00:00, run_start_date=2022-02-27 05:35:21.622981+00:00, run_end_date=2022-02-27 05:35:21.876650+00:00, run_duration=0.253669, state=up_for_retry, executor_state=success, try_number=1, max_tries=1, job_id=3, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 13:37:53,890[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-26T00:00:00+00:00 [scheduled]>[0m
+[[34m2022-02-27 13:37:53,894[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 13:37:53,894[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 13:37:53,895[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-26T00:00:00+00:00 [scheduled]>[0m
+[[34m2022-02-27 13:37:53,898[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='scheduled__2022-02-26T00:00:00+00:00', try_number=2) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 13:37:53,899[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'scheduled__2022-02-26T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 13:37:53,901[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'scheduled__2022-02-26T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 13:37:54,565[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 13:37:54,933[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices scheduled__2022-02-26T00:00:00+00:00 [queued]> on host 1.0.0.127.in-addr.arpa
+[[34m2022-02-27 13:38:03,284[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=scheduled__2022-02-26T00:00:00+00:00 exited with status success for try_number 2[0m
+[[34m2022-02-27 13:38:03,293[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=scheduled__2022-02-26T00:00:00+00:00, run_start_date=2022-02-27 05:37:55.584813+00:00, run_end_date=2022-02-27 05:38:03.036556+00:00, run_duration=7.45174, state=success, executor_state=success, try_number=2, max_tries=2, job_id=4, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 13:38:03,365[0m] {[34mdagrun.py:[0m545} INFO[0m - Marking run <DagRun Download_Stock_Price @ 2022-02-26 00:00:00+00:00: scheduled__2022-02-26T00:00:00+00:00, externally triggered: False> successful[0m
+[[34m2022-02-27 13:38:03,366[0m] {[34mdagrun.py:[0m590} INFO[0m - DagRun Finished: dag_id=Download_Stock_Price, execution_date=2022-02-26 00:00:00+00:00, run_id=scheduled__2022-02-26T00:00:00+00:00, run_start_date=2022-02-27 05:37:53.822000+00:00, run_end_date=2022-02-27 05:38:03.365991+00:00, run_duration=9.543991, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2022-02-26 00:00:00+00:00, data_interval_end=2022-02-27 00:00:00+00:00, dag_hash=09334f9da8f8418d818874e39e43e6d1[0m
+[[34m2022-02-27 13:38:03,369[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to 2022-02-27T00:00:00+00:00[0m
+[[34m2022-02-27 13:39:45,443[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 13:44:45,530[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 13:49:45,714[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 13:50:26,292[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T05:50:25.477125+00:00 [scheduled]>[0m
+[[34m2022-02-27 13:50:26,294[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 13:50:26,295[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 13:50:26,295[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T05:50:25.477125+00:00 [scheduled]>[0m
+[[34m2022-02-27 13:50:26,298[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='manual__2022-02-27T05:50:25.477125+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 13:50:26,298[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T05:50:25.477125+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 13:50:26,301[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T05:50:25.477125+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 13:50:26,918[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 13:50:27,330[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T05:50:25.477125+00:00 [queued]> on host andydemacbook-air.local
+[[34m2022-02-27 13:50:36,600[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=manual__2022-02-27T05:50:25.477125+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 13:50:36,611[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=manual__2022-02-27T05:50:25.477125+00:00, run_start_date=2022-02-27 05:50:27.707897+00:00, run_end_date=2022-02-27 05:50:36.305740+00:00, run_duration=8.59784, state=success, executor_state=success, try_number=1, max_tries=1, job_id=5, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 13:50:36,686[0m] {[34mdagrun.py:[0m545} INFO[0m - Marking run <DagRun Download_Stock_Price @ 2022-02-27 05:50:25.477125+00:00: manual__2022-02-27T05:50:25.477125+00:00, externally triggered: True> successful[0m
+[[34m2022-02-27 13:50:36,687[0m] {[34mdagrun.py:[0m590} INFO[0m - DagRun Finished: dag_id=Download_Stock_Price, execution_date=2022-02-27 05:50:25.477125+00:00, run_id=manual__2022-02-27T05:50:25.477125+00:00, run_start_date=2022-02-27 05:50:26.240738+00:00, run_end_date=2022-02-27 05:50:36.687028+00:00, run_duration=10.44629, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-02-26 05:50:25.477125+00:00, data_interval_end=2022-02-27 05:50:25.477125+00:00, dag_hash=09334f9da8f8418d818874e39e43e6d1[0m
+[[34m2022-02-27 13:50:36,689[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to 2022-02-27T05:50:25.477125+00:00[0m
+[[34m2022-02-27 13:54:45,800[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 13:59:45,964[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:04:46,123[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:09:46,227[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:14:46,325[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:19:46,503[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:24:46,532[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:29:46,577[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:34:46,637[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:39:46,704[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:41:17,565[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 2 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T06:41:16.888991+00:00 [scheduled]>
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T06:41:16.888991+00:00 [scheduled]>[0m
+[[34m2022-02-27 14:41:17,586[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 2 task instances ready to be queued[0m
+[[34m2022-02-27 14:41:17,586[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 14:41:17,587[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 1/16 running and queued tasks[0m
+[[34m2022-02-27 14:41:17,587[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T06:41:16.888991+00:00 [scheduled]>
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T06:41:16.888991+00:00 [scheduled]>[0m
+[[34m2022-02-27 14:41:17,592[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='manual__2022-02-27T06:41:16.888991+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 14:41:17,592[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T06:41:16.888991+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 14:41:17,593[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='save_to_database', run_id='manual__2022-02-27T06:41:16.888991+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 14:41:17,593[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T06:41:16.888991+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 14:41:17,598[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T06:41:16.888991+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 14:41:18,388[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 14:41:18,869[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T06:41:16.888991+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 14:41:21,965[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T06:41:16.888991+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 14:41:22,861[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 14:41:23,234[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T06:41:16.888991+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 14:41:24,130[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=manual__2022-02-27T06:41:16.888991+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 14:41:24,130[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.save_to_database run_id=manual__2022-02-27T06:41:16.888991+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 14:41:24,142[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=manual__2022-02-27T06:41:16.888991+00:00, run_start_date=2022-02-27 06:41:19.248235+00:00, run_end_date=2022-02-27 06:41:21.691551+00:00, run_duration=2.44332, state=success, executor_state=success, try_number=1, max_tries=0, job_id=6, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 14:41:24,143[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=save_to_database, run_id=manual__2022-02-27T06:41:16.888991+00:00, run_start_date=2022-02-27 06:41:23.401485+00:00, run_end_date=2022-02-27 06:41:23.681079+00:00, run_duration=0.279594, state=failed, executor_state=success, try_number=1, max_tries=0, job_id=7, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 14:41:24,228[0m] {[34mdagrun.py:[0m530} ERROR[0m - Marking run <DagRun Download_Stock_Price @ 2022-02-27 06:41:16.888991+00:00: manual__2022-02-27T06:41:16.888991+00:00, externally triggered: True> failed[0m
+[[34m2022-02-27 14:41:24,229[0m] {[34mdagrun.py:[0m590} INFO[0m - DagRun Finished: dag_id=Download_Stock_Price, execution_date=2022-02-27 06:41:16.888991+00:00, run_id=manual__2022-02-27T06:41:16.888991+00:00, run_start_date=2022-02-27 06:41:17.372918+00:00, run_end_date=2022-02-27 06:41:24.229277+00:00, run_duration=6.856359, state=failed, external_trigger=True, run_type=manual, data_interval_start=2022-02-27 06:41:16.888991+00:00, data_interval_end=2022-02-27 06:41:16.888991+00:00, dag_hash=418764fa6b7a2a1babe3c215bc292d26[0m
+[[34m2022-02-27 14:41:24,232[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to None[0m
+[[34m2022-02-27 14:44:46,785[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:49:46,875[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:54:46,996[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 14:59:47,075[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:04:47,135[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:09:47,192[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:14:47,361[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:16:35,658[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:16:34.405432+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:16:35,661[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 15:16:35,662[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 15:16:35,662[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:16:34.405432+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:16:35,665[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='manual__2022-02-27T07:16:34.405432+00:00', try_number=1) to executor with priority 2 and queue default[0m
+[[34m2022-02-27 15:16:35,665[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T07:16:34.405432+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:16:35,670[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T07:16:34.405432+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:16:36,738[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 15:16:37,135[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:16:34.405432+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 15:16:40,047[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=manual__2022-02-27T07:16:34.405432+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 15:16:40,067[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=manual__2022-02-27T07:16:34.405432+00:00, run_start_date=2022-02-27 07:16:37.310502+00:00, run_end_date=2022-02-27 07:16:39.759078+00:00, run_duration=2.44858, state=success, executor_state=success, try_number=1, max_tries=0, job_id=8, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator[0m
+[[34m2022-02-27 15:16:40,196[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:16:34.405432+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:16:40,199[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 15:16:40,199[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 15:16:40,199[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:16:34.405432+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:16:40,203[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='save_to_database', run_id='manual__2022-02-27T07:16:34.405432+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 15:16:40,203[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T07:16:34.405432+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:16:40,207[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T07:16:34.405432+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:16:41,205[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 15:16:41,594[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:16:34.405432+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 15:16:42,633[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.save_to_database run_id=manual__2022-02-27T07:16:34.405432+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 15:16:42,647[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=save_to_database, run_id=manual__2022-02-27T07:16:34.405432+00:00, run_start_date=2022-02-27 07:16:41.946000+00:00, run_end_date=2022-02-27 07:16:42.370877+00:00, run_duration=0.424877, state=failed, executor_state=success, try_number=1, max_tries=0, job_id=9, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 15:16:42,712[0m] {[34mdagrun.py:[0m530} ERROR[0m - Marking run <DagRun Download_Stock_Price @ 2022-02-27 07:16:34.405432+00:00: manual__2022-02-27T07:16:34.405432+00:00, externally triggered: True> failed[0m
+[[34m2022-02-27 15:16:42,713[0m] {[34mdagrun.py:[0m590} INFO[0m - DagRun Finished: dag_id=Download_Stock_Price, execution_date=2022-02-27 07:16:34.405432+00:00, run_id=manual__2022-02-27T07:16:34.405432+00:00, run_start_date=2022-02-27 07:16:35.603123+00:00, run_end_date=2022-02-27 07:16:42.713393+00:00, run_duration=7.11027, state=failed, external_trigger=True, run_type=manual, data_interval_start=2022-02-27 07:16:34.405432+00:00, data_interval_end=2022-02-27 07:16:34.405432+00:00, dag_hash=e0dd2134cd5b952aefa0e10b016d5a8d[0m
+[[34m2022-02-27 15:16:42,717[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to None[0m
+[[34m2022-02-27 15:19:47,441[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:24:47,513[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:29:47,677[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:34:47,764[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:39:47,831[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:44:47,926[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:49:48,084[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:50:14,314[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:50:13.633404+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:50:14,318[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 15:50:14,319[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 15:50:14,319[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:50:13.633404+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:50:14,323[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='manual__2022-02-27T07:50:13.633404+00:00', try_number=1) to executor with priority 2 and queue default[0m
+[[34m2022-02-27 15:50:14,324[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T07:50:13.633404+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:50:14,329[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T07:50:13.633404+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:50:15,249[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 15:50:15,806[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:50:13.633404+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 15:50:18,591[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=manual__2022-02-27T07:50:13.633404+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 15:50:18,601[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=manual__2022-02-27T07:50:13.633404+00:00, run_start_date=2022-02-27 07:50:16.175859+00:00, run_end_date=2022-02-27 07:50:18.383867+00:00, run_duration=2.20801, state=success, executor_state=success, try_number=1, max_tries=0, job_id=10, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator[0m
+[[34m2022-02-27 15:50:18,919[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:50:13.633404+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:50:18,923[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 15:50:18,923[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 15:50:18,923[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:50:13.633404+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:50:18,927[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='save_to_database', run_id='manual__2022-02-27T07:50:13.633404+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 15:50:18,928[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T07:50:13.633404+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:50:18,932[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T07:50:13.633404+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:50:19,781[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 15:50:20,276[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:50:13.633404+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 15:50:21,095[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.save_to_database run_id=manual__2022-02-27T07:50:13.633404+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 15:50:21,107[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=save_to_database, run_id=manual__2022-02-27T07:50:13.633404+00:00, run_start_date=2022-02-27 07:50:20.457667+00:00, run_end_date=2022-02-27 07:50:20.767714+00:00, run_duration=0.310047, state=failed, executor_state=success, try_number=1, max_tries=0, job_id=11, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 15:50:21,175[0m] {[34mdagrun.py:[0m530} ERROR[0m - Marking run <DagRun Download_Stock_Price @ 2022-02-27 07:50:13.633404+00:00: manual__2022-02-27T07:50:13.633404+00:00, externally triggered: True> failed[0m
+[[34m2022-02-27 15:50:21,175[0m] {[34mdagrun.py:[0m590} INFO[0m - DagRun Finished: dag_id=Download_Stock_Price, execution_date=2022-02-27 07:50:13.633404+00:00, run_id=manual__2022-02-27T07:50:13.633404+00:00, run_start_date=2022-02-27 07:50:14.211872+00:00, run_end_date=2022-02-27 07:50:21.175704+00:00, run_duration=6.963832, state=failed, external_trigger=True, run_type=manual, data_interval_start=2022-02-27 07:50:13.633404+00:00, data_interval_end=2022-02-27 07:50:13.633404+00:00, dag_hash=e0dd2134cd5b952aefa0e10b016d5a8d[0m
+[[34m2022-02-27 15:50:21,179[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to None[0m
+[[34m2022-02-27 15:52:37,186[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:52:36.478336+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:52:37,191[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 15:52:37,192[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 15:52:37,192[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:52:36.478336+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:52:37,197[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='manual__2022-02-27T07:52:36.478336+00:00', try_number=1) to executor with priority 2 and queue default[0m
+[[34m2022-02-27 15:52:37,198[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T07:52:36.478336+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:52:37,203[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T07:52:36.478336+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:52:38,148[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 15:52:38,551[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:52:36.478336+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 15:52:41,592[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=manual__2022-02-27T07:52:36.478336+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 15:52:41,605[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=manual__2022-02-27T07:52:36.478336+00:00, run_start_date=2022-02-27 07:52:38.907871+00:00, run_end_date=2022-02-27 07:52:41.306710+00:00, run_duration=2.39884, state=success, executor_state=success, try_number=1, max_tries=0, job_id=12, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator[0m
+[[34m2022-02-27 15:52:41,735[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:52:36.478336+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:52:41,739[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 15:52:41,739[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 15:52:41,739[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:52:36.478336+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:52:41,744[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='save_to_database', run_id='manual__2022-02-27T07:52:36.478336+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 15:52:41,744[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T07:52:36.478336+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:52:41,748[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T07:52:36.478336+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:52:42,745[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 15:52:43,170[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:52:36.478336+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 15:52:44,152[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.save_to_database run_id=manual__2022-02-27T07:52:36.478336+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 15:52:44,164[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=save_to_database, run_id=manual__2022-02-27T07:52:36.478336+00:00, run_start_date=2022-02-27 07:52:43.471899+00:00, run_end_date=2022-02-27 07:52:43.810783+00:00, run_duration=0.338884, state=failed, executor_state=success, try_number=1, max_tries=0, job_id=13, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 15:52:44,239[0m] {[34mdagrun.py:[0m530} ERROR[0m - Marking run <DagRun Download_Stock_Price @ 2022-02-27 07:52:36.478336+00:00: manual__2022-02-27T07:52:36.478336+00:00, externally triggered: True> failed[0m
+[[34m2022-02-27 15:52:44,239[0m] {[34mdagrun.py:[0m590} INFO[0m - DagRun Finished: dag_id=Download_Stock_Price, execution_date=2022-02-27 07:52:36.478336+00:00, run_id=manual__2022-02-27T07:52:36.478336+00:00, run_start_date=2022-02-27 07:52:37.096189+00:00, run_end_date=2022-02-27 07:52:44.239532+00:00, run_duration=7.143343, state=failed, external_trigger=True, run_type=manual, data_interval_start=2022-02-27 07:52:36.478336+00:00, data_interval_end=2022-02-27 07:52:36.478336+00:00, dag_hash=e0dd2134cd5b952aefa0e10b016d5a8d[0m
+[[34m2022-02-27 15:52:44,243[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to None[0m
+[[34m2022-02-27 15:54:48,147[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 15:56:14,373[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:56:13.424155+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:56:14,377[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 15:56:14,378[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 15:56:14,378[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:56:13.424155+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:56:14,382[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='manual__2022-02-27T07:56:13.424155+00:00', try_number=1) to executor with priority 2 and queue default[0m
+[[34m2022-02-27 15:56:14,383[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T07:56:13.424155+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:56:14,386[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T07:56:13.424155+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:56:15,405[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 15:56:15,800[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:56:13.424155+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 15:56:18,945[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=manual__2022-02-27T07:56:13.424155+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 15:56:18,958[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=manual__2022-02-27T07:56:13.424155+00:00, run_start_date=2022-02-27 07:56:16.173762+00:00, run_end_date=2022-02-27 07:56:18.564359+00:00, run_duration=2.3906, state=success, executor_state=success, try_number=1, max_tries=0, job_id=14, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator[0m
+[[34m2022-02-27 15:56:19,077[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:56:13.424155+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:56:19,081[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 15:56:19,081[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 15:56:19,081[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:56:13.424155+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:56:19,085[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='save_to_database', run_id='manual__2022-02-27T07:56:13.424155+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 15:56:19,085[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T07:56:13.424155+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:56:19,089[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T07:56:13.424155+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:56:19,952[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 15:56:20,445[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:56:13.424155+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 15:56:21,439[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.save_to_database run_id=manual__2022-02-27T07:56:13.424155+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 15:56:21,461[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=save_to_database, run_id=manual__2022-02-27T07:56:13.424155+00:00, run_start_date=2022-02-27 07:56:20.650413+00:00, run_end_date=2022-02-27 07:56:21.029443+00:00, run_duration=0.37903, state=failed, executor_state=success, try_number=1, max_tries=0, job_id=15, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 15:56:21,559[0m] {[34mdagrun.py:[0m530} ERROR[0m - Marking run <DagRun Download_Stock_Price @ 2022-02-27 07:56:13.424155+00:00: manual__2022-02-27T07:56:13.424155+00:00, externally triggered: True> failed[0m
+[[34m2022-02-27 15:56:21,560[0m] {[34mdagrun.py:[0m590} INFO[0m - DagRun Finished: dag_id=Download_Stock_Price, execution_date=2022-02-27 07:56:13.424155+00:00, run_id=manual__2022-02-27T07:56:13.424155+00:00, run_start_date=2022-02-27 07:56:14.291146+00:00, run_end_date=2022-02-27 07:56:21.560150+00:00, run_duration=7.269004, state=failed, external_trigger=True, run_type=manual, data_interval_start=2022-02-27 07:56:13.424155+00:00, data_interval_end=2022-02-27 07:56:13.424155+00:00, dag_hash=e0dd2134cd5b952aefa0e10b016d5a8d[0m
+[[34m2022-02-27 15:56:21,565[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to None[0m
+[[34m2022-02-27 15:56:58,415[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:56:57.068905+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:56:58,419[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 15:56:58,419[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 15:56:58,419[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:56:57.068905+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:56:58,424[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='manual__2022-02-27T07:56:57.068905+00:00', try_number=1) to executor with priority 2 and queue default[0m
+[[34m2022-02-27 15:56:58,424[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T07:56:57.068905+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:56:58,428[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T07:56:57.068905+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:56:59,497[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 15:56:59,907[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T07:56:57.068905+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 15:57:03,076[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=manual__2022-02-27T07:56:57.068905+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 15:57:03,092[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=manual__2022-02-27T07:56:57.068905+00:00, run_start_date=2022-02-27 07:57:00.090208+00:00, run_end_date=2022-02-27 07:57:02.759666+00:00, run_duration=2.66946, state=success, executor_state=success, try_number=1, max_tries=0, job_id=16, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator[0m
+[[34m2022-02-27 15:57:03,250[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:56:57.068905+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:57:03,254[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 15:57:03,254[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 15:57:03,254[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:56:57.068905+00:00 [scheduled]>[0m
+[[34m2022-02-27 15:57:03,259[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='save_to_database', run_id='manual__2022-02-27T07:56:57.068905+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 15:57:03,259[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T07:56:57.068905+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:57:03,266[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T07:56:57.068905+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 15:57:04,375[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 15:57:04,780[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T07:56:57.068905+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 15:57:05,957[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.save_to_database run_id=manual__2022-02-27T07:56:57.068905+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 15:57:05,972[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=save_to_database, run_id=manual__2022-02-27T07:56:57.068905+00:00, run_start_date=2022-02-27 07:57:04.954096+00:00, run_end_date=2022-02-27 07:57:05.531426+00:00, run_duration=0.57733, state=success, executor_state=success, try_number=1, max_tries=0, job_id=17, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 15:57:06,057[0m] {[34mdagrun.py:[0m545} INFO[0m - Marking run <DagRun Download_Stock_Price @ 2022-02-27 07:56:57.068905+00:00: manual__2022-02-27T07:56:57.068905+00:00, externally triggered: True> successful[0m
+[[34m2022-02-27 15:57:06,057[0m] {[34mdagrun.py:[0m590} INFO[0m - DagRun Finished: dag_id=Download_Stock_Price, execution_date=2022-02-27 07:56:57.068905+00:00, run_id=manual__2022-02-27T07:56:57.068905+00:00, run_start_date=2022-02-27 07:56:58.332551+00:00, run_end_date=2022-02-27 07:57:06.057478+00:00, run_duration=7.724927, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-02-27 07:56:57.068905+00:00, data_interval_end=2022-02-27 07:56:57.068905+00:00, dag_hash=e0dd2134cd5b952aefa0e10b016d5a8d[0m
+[[34m2022-02-27 15:57:06,062[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to None[0m
+[[34m2022-02-27 15:59:48,532[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:04:48,783[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:09:48,915[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:14:49,047[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:19:49,167[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:24:36,483[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T08:24:35.921740+00:00 [scheduled]>[0m
+[[34m2022-02-27 16:24:36,489[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 16:24:36,489[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 16:24:36,489[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T08:24:35.921740+00:00 [scheduled]>[0m
+[[34m2022-02-27 16:24:36,495[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='manual__2022-02-27T08:24:35.921740+00:00', try_number=1) to executor with priority 2 and queue default[0m
+[[34m2022-02-27 16:24:36,496[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T08:24:35.921740+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 16:24:36,502[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T08:24:35.921740+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 16:24:37,519[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 16:24:38,017[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T08:24:35.921740+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 16:24:41,580[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=manual__2022-02-27T08:24:35.921740+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 16:24:41,594[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=manual__2022-02-27T08:24:35.921740+00:00, run_start_date=2022-02-27 08:24:38.417023+00:00, run_end_date=2022-02-27 08:24:41.188808+00:00, run_duration=2.77179, state=success, executor_state=success, try_number=1, max_tries=0, job_id=18, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator[0m
+[[34m2022-02-27 16:24:41,722[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T08:24:35.921740+00:00 [scheduled]>[0m
+[[34m2022-02-27 16:24:41,726[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 16:24:41,726[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 16:24:41,727[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T08:24:35.921740+00:00 [scheduled]>[0m
+[[34m2022-02-27 16:24:41,731[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='save_to_database', run_id='manual__2022-02-27T08:24:35.921740+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 16:24:41,732[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T08:24:35.921740+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 16:24:41,735[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T08:24:35.921740+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 16:24:42,662[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 16:24:43,047[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T08:24:35.921740+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 16:24:44,401[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.save_to_database run_id=manual__2022-02-27T08:24:35.921740+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 16:24:44,418[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=save_to_database, run_id=manual__2022-02-27T08:24:35.921740+00:00, run_start_date=2022-02-27 08:24:43.233766+00:00, run_end_date=2022-02-27 08:24:43.951166+00:00, run_duration=0.7174, state=success, executor_state=success, try_number=1, max_tries=0, job_id=19, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 16:24:44,496[0m] {[34mdagrun.py:[0m545} INFO[0m - Marking run <DagRun Download_Stock_Price @ 2022-02-27 08:24:35.921740+00:00: manual__2022-02-27T08:24:35.921740+00:00, externally triggered: True> successful[0m
+[[34m2022-02-27 16:24:44,497[0m] {[34mdagrun.py:[0m590} INFO[0m - DagRun Finished: dag_id=Download_Stock_Price, execution_date=2022-02-27 08:24:35.921740+00:00, run_id=manual__2022-02-27T08:24:35.921740+00:00, run_start_date=2022-02-27 08:24:36.351871+00:00, run_end_date=2022-02-27 08:24:44.497034+00:00, run_duration=8.145163, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-02-27 08:24:35.921740+00:00, data_interval_end=2022-02-27 08:24:35.921740+00:00, dag_hash=e0dd2134cd5b952aefa0e10b016d5a8d[0m
+[[34m2022-02-27 16:24:44,500[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to None[0m
+[[34m2022-02-27 16:24:49,293[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:29:49,478[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:34:49,658[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:39:49,783[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:44:49,932[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:49:50,036[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:54:50,138[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 16:59:50,217[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:04:50,317[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:09:50,485[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:14:50,644[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:15:05,694[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T09:15:04.370088+00:00 [scheduled]>[0m
+[[34m2022-02-27 17:15:05,698[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 17:15:05,698[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 17:15:05,698[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T09:15:04.370088+00:00 [scheduled]>[0m
+[[34m2022-02-27 17:15:05,702[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='download_prices', run_id='manual__2022-02-27T09:15:04.370088+00:00', try_number=1) to executor with priority 2 and queue default[0m
+[[34m2022-02-27 17:15:05,703[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T09:15:04.370088+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 17:15:05,707[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'download_prices', 'manual__2022-02-27T09:15:04.370088+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 17:15:06,773[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 17:15:07,226[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.download_prices manual__2022-02-27T09:15:04.370088+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 17:15:10,315[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.download_prices run_id=manual__2022-02-27T09:15:04.370088+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 17:15:10,329[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=download_prices, run_id=manual__2022-02-27T09:15:04.370088+00:00, run_start_date=2022-02-27 09:15:07.619404+00:00, run_end_date=2022-02-27 09:15:10.014487+00:00, run_duration=2.39508, state=success, executor_state=success, try_number=1, max_tries=0, job_id=20, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator[0m
+[[34m2022-02-27 17:15:10,448[0m] {[34mscheduler_job.py:[0m288} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T09:15:04.370088+00:00 [scheduled]>[0m
+[[34m2022-02-27 17:15:10,452[0m] {[34mscheduler_job.py:[0m317} INFO[0m - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 1 task instances ready to be queued[0m
+[[34m2022-02-27 17:15:10,452[0m] {[34mscheduler_job.py:[0m345} INFO[0m - DAG Download_Stock_Price has 0/16 running and queued tasks[0m
+[[34m2022-02-27 17:15:10,452[0m] {[34mscheduler_job.py:[0m410} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T09:15:04.370088+00:00 [scheduled]>[0m
+[[34m2022-02-27 17:15:10,457[0m] {[34mscheduler_job.py:[0m450} INFO[0m - Sending TaskInstanceKey(dag_id='Download_Stock_Price', task_id='save_to_database', run_id='manual__2022-02-27T09:15:04.370088+00:00', try_number=1) to executor with priority 1 and queue default[0m
+[[34m2022-02-27 17:15:10,457[0m] {[34mbase_executor.py:[0m82} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T09:15:04.370088+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 17:15:10,461[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'Download_Stock_Price', 'save_to_database', 'manual__2022-02-27T09:15:04.370088+00:00', '--local', '--subdir', 'DAGS_FOLDER/download_stock_price.py'][0m
+[[34m2022-02-27 17:15:11,551[0m] {[34mdagbag.py:[0m500} INFO[0m - Filling up the DagBag from /Users/andyhsu/Desktop/***_tutorial/***/dags/download_stock_price.py[0m
+[[34m2022-02-27 17:15:11,995[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-***[cncf.kubernetes][0m
+Running <TaskInstance: Download_Stock_Price.save_to_database manual__2022-02-27T09:15:04.370088+00:00 [queued]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[[34m2022-02-27 17:15:13,209[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Executor reports execution of Download_Stock_Price.save_to_database run_id=manual__2022-02-27T09:15:04.370088+00:00 exited with status success for try_number 1[0m
+[[34m2022-02-27 17:15:13,225[0m] {[34mscheduler_job.py:[0m547} INFO[0m - TaskInstance Finished: dag_id=Download_Stock_Price, task_id=save_to_database, run_id=manual__2022-02-27T09:15:04.370088+00:00, run_start_date=2022-02-27 09:15:12.182510+00:00, run_end_date=2022-02-27 09:15:12.828899+00:00, run_duration=0.646389, state=success, executor_state=success, try_number=1, max_tries=0, job_id=21, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator[0m
+[[34m2022-02-27 17:15:13,300[0m] {[34mdagrun.py:[0m545} INFO[0m - Marking run <DagRun Download_Stock_Price @ 2022-02-27 09:15:04.370088+00:00: manual__2022-02-27T09:15:04.370088+00:00, externally triggered: True> successful[0m
+[[34m2022-02-27 17:15:13,301[0m] {[34mdagrun.py:[0m590} INFO[0m - DagRun Finished: dag_id=Download_Stock_Price, execution_date=2022-02-27 09:15:04.370088+00:00, run_id=manual__2022-02-27T09:15:04.370088+00:00, run_start_date=2022-02-27 09:15:05.625544+00:00, run_end_date=2022-02-27 09:15:13.301090+00:00, run_duration=7.675546, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-02-27 09:15:04.370088+00:00, data_interval_end=2022-02-27 09:15:04.370088+00:00, dag_hash=e0dd2134cd5b952aefa0e10b016d5a8d[0m
+[[34m2022-02-27 17:15:13,305[0m] {[34mdag.py:[0m2935} INFO[0m - Setting next_dagrun for Download_Stock_Price to None[0m
+[[34m2022-02-27 17:19:50,725[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:24:50,845[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:29:50,886[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:34:50,980[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:39:51,073[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:44:51,257[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:49:51,371[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:54:51,488[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 17:59:51,585[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:04:51,674[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:09:51,783[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:14:51,833[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:19:51,927[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:24:52,043[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:29:52,240[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:34:52,365[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:39:52,467[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:44:52,572[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:49:52,771[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:54:52,951[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 18:59:53,164[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 19:04:53,290[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 19:09:53,463[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 19:14:53,555[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 19:19:53,640[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 19:24:53,756[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 19:29:53,836[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 19:34:53,910[0m] {[34mscheduler_job.py:[0m1114} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-02-27 19:36:03,500[0m] {[34mscheduler_job.py:[0m644} ERROR[0m - Exception when executing SchedulerJob._run_scheduler_loop[0m
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 500, in checkout
+    rec._checkin_failed(err)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 610, in get_connection
+    self.__connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 628, in _execute
+    self._run_scheduler_loop()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 709, in _run_scheduler_loop
+    num_queued_tis = self._do_scheduling(session)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 782, in _do_scheduling
+    self._create_dagruns_for_dags(guard, session)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/retries.py", line 76, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/tenacity/__init__.py", line 360, in iter
+    raise retry_exc.reraise()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/tenacity/__init__.py", line 193, in reraise
+    raise self.last_attempt.result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+    return self.__get_result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/retries.py", line 85, in wrapped_function
+    return func(*args, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 847, in _create_dagruns_for_dags
+    self._create_dag_runs(query.all(), session)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3373, in all
+    return list(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3556, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3571, in _get_bind_args
+    return fn(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 500, in checkout
+    rec._checkin_failed(err)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 610, in get_connection
+    self.__connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: http://sqlalche.me/e/13/e3q8)[0m
+[[34m2022-02-27 19:36:04,509[0m] {[34mprocess_utils.py:[0m120} INFO[0m - Sending Signals.SIGTERM to group 30032. PIDs of all processes in the group: [30041, 77292, 30032][0m
+[[34m2022-02-27 19:36:04,509[0m] {[34mprocess_utils.py:[0m75} INFO[0m - Sending the signal Signals.SIGTERM to group 30032[0m
+[2022-02-27 19:36:04,568] {process_utils.py:237} INFO - Waiting up to 5 seconds for processes to exit...
+[[34m2022-02-27 19:36:04,687[0m] {[34mprocess_utils.py:[0m70} INFO[0m - Process psutil.Process(pid=30032, status='terminated', exitcode=0, started='13:34:41') (30032) terminated with exit code 0[0m
+[[34m2022-02-27 19:36:04,688[0m] {[34mprocess_utils.py:[0m70} INFO[0m - Process psutil.Process(pid=30041, status='terminated', started='13:34:42') (30041) terminated with exit code None[0m
+[[34m2022-02-27 19:36:04,688[0m] {[34mprocess_utils.py:[0m70} INFO[0m - Process psutil.Process(pid=77292, status='terminated', started='19:36:03') (77292) terminated with exit code None[0m
+[[34m2022-02-27 19:36:04,689[0m] {[34mscheduler_job.py:[0m655} INFO[0m - Exited execute loop[0m

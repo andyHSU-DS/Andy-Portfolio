@@ -1,0 +1,98 @@
+[2022-02-26 03:32:24,394] {processor.py:163} INFO - Started process (PID=5304) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:32:24,394] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 03:32:24,395] {logging_mixin.py:109} INFO - [2022-02-26 03:32:24,395] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:32:24,777] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:32:24,927] {logging_mixin.py:109} INFO - [2022-02-26 03:32:24,927] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:32:24,932] {logging_mixin.py:109} INFO - [2022-02-26 03:32:24,932] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-24T00:00:00+00:00
+[2022-02-26 03:32:24,935] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.541 seconds
+[2022-02-26 03:33:27,196] {processor.py:163} INFO - Started process (PID=5358) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:33:27,197] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 03:33:27,197] {logging_mixin.py:109} INFO - [2022-02-26 03:33:27,197] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:33:27,424] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:33:27,455] {logging_mixin.py:109} INFO - [2022-02-26 03:33:27,452] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:33:27,459] {logging_mixin.py:109} INFO - [2022-02-26 03:33:27,459] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 03:33:27,469] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.273 seconds
+[2022-02-26 03:33:46,169] {processor.py:163} INFO - Started process (PID=5374) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:33:46,169] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 03:33:46,170] {logging_mixin.py:109} INFO - [2022-02-26 03:33:46,169] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:33:46,323] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:33:46,363] {logging_mixin.py:109} INFO - [2022-02-26 03:33:46,363] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:33:46,366] {logging_mixin.py:109} INFO - [2022-02-26 03:33:46,366] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 03:33:46,369] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.200 seconds
+[2022-02-26 03:34:05,701] {processor.py:163} INFO - Started process (PID=5406) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:34:05,701] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 03:34:05,701] {logging_mixin.py:109} INFO - [2022-02-26 03:34:05,701] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:34:05,862] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:34:05,901] {logging_mixin.py:109} INFO - [2022-02-26 03:34:05,901] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:34:05,909] {logging_mixin.py:109} INFO - [2022-02-26 03:34:05,909] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 03:34:05,913] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.212 seconds
+[2022-02-26 03:51:52,844] {processor.py:163} INFO - Started process (PID=5459) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:51:52,844] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 03:51:52,845] {logging_mixin.py:109} INFO - [2022-02-26 03:51:52,845] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:51:53,014] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 03:51:53,045] {logging_mixin.py:109} INFO - [2022-02-26 03:51:53,045] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:51:53,054] {logging_mixin.py:109} INFO - [2022-02-26 03:51:53,054] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 03:51:53,078] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.234 seconds
+[2022-02-26 04:22:33,512] {processor.py:163} INFO - Started process (PID=5488) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 04:22:33,512] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 04:22:33,512] {logging_mixin.py:109} INFO - [2022-02-26 04:22:33,512] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 04:22:33,665] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 04:22:33,701] {logging_mixin.py:109} INFO - [2022-02-26 04:22:33,701] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:22:33,711] {logging_mixin.py:109} INFO - [2022-02-26 04:22:33,710] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 04:22:33,723] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.211 seconds
+[2022-02-26 04:37:25,393] {processor.py:163} INFO - Started process (PID=5530) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 04:37:25,393] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 04:37:25,393] {logging_mixin.py:109} INFO - [2022-02-26 04:37:25,393] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 04:37:25,544] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 04:37:25,581] {logging_mixin.py:109} INFO - [2022-02-26 04:37:25,581] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:37:25,622] {logging_mixin.py:109} INFO - [2022-02-26 04:37:25,622] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 04:37:25,625] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.232 seconds
+[2022-02-26 04:52:25,137] {processor.py:163} INFO - Started process (PID=5568) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 04:52:25,137] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 04:52:25,137] {logging_mixin.py:109} INFO - [2022-02-26 04:52:25,137] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 04:52:25,324] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 04:52:25,362] {logging_mixin.py:109} INFO - [2022-02-26 04:52:25,360] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:52:25,366] {logging_mixin.py:109} INFO - [2022-02-26 04:52:25,366] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 04:52:25,371] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.234 seconds
+[2022-02-26 05:07:24,889] {processor.py:163} INFO - Started process (PID=5607) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:07:24,889] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 05:07:24,889] {logging_mixin.py:109} INFO - [2022-02-26 05:07:24,889] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:07:25,053] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:07:25,091] {logging_mixin.py:109} INFO - [2022-02-26 05:07:25,091] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:07:25,095] {logging_mixin.py:109} INFO - [2022-02-26 05:07:25,095] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 05:07:25,123] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.234 seconds
+[2022-02-26 05:22:24,707] {processor.py:163} INFO - Started process (PID=5657) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:22:24,707] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 05:22:24,708] {logging_mixin.py:109} INFO - [2022-02-26 05:22:24,708] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:22:24,883] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:22:24,921] {logging_mixin.py:109} INFO - [2022-02-26 05:22:24,921] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:22:24,950] {logging_mixin.py:109} INFO - [2022-02-26 05:22:24,950] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 05:22:24,955] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.248 seconds
+[2022-02-26 05:37:26,182] {processor.py:163} INFO - Started process (PID=5697) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:37:26,188] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 05:37:26,189] {logging_mixin.py:109} INFO - [2022-02-26 05:37:26,189] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:37:26,384] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:37:26,420] {logging_mixin.py:109} INFO - [2022-02-26 05:37:26,420] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:37:26,426] {logging_mixin.py:109} INFO - [2022-02-26 05:37:26,425] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 05:37:26,430] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.249 seconds
+[2022-02-26 05:52:24,791] {processor.py:163} INFO - Started process (PID=5744) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:52:24,791] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 05:52:24,791] {logging_mixin.py:109} INFO - [2022-02-26 05:52:24,791] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:52:25,016] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 05:52:25,053] {logging_mixin.py:109} INFO - [2022-02-26 05:52:25,053] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:52:25,061] {logging_mixin.py:109} INFO - [2022-02-26 05:52:25,061] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 05:52:25,066] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.275 seconds
+[2022-02-26 06:10:54,857] {processor.py:163} INFO - Started process (PID=5782) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 06:10:54,857] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 06:10:54,857] {logging_mixin.py:109} INFO - [2022-02-26 06:10:54,857] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 06:10:55,002] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 06:10:55,041] {logging_mixin.py:109} INFO - [2022-02-26 06:10:55,041] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 06:10:55,047] {logging_mixin.py:109} INFO - [2022-02-26 06:10:55,047] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 06:10:55,051] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.195 seconds
+[2022-02-26 07:14:54,586] {processor.py:163} INFO - Started process (PID=5830) to work on /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 07:14:54,586] {processor.py:642} INFO - Processing file /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py for tasks to queue
+[2022-02-26 07:14:54,587] {logging_mixin.py:109} INFO - [2022-02-26 07:14:54,587] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 07:14:54,841] {processor.py:654} INFO - DAG(s) dict_keys(['Download_Stock_Price']) retrieved from /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py
+[2022-02-26 07:14:54,872] {logging_mixin.py:109} INFO - [2022-02-26 07:14:54,872] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 07:14:54,876] {logging_mixin.py:109} INFO - [2022-02-26 07:14:54,876] {dag.py:2935} INFO - Setting next_dagrun for Download_Stock_Price to 2022-02-25T00:00:00+00:00
+[2022-02-26 07:14:54,878] {processor.py:171} INFO - Processing /Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py took 0.292 seconds

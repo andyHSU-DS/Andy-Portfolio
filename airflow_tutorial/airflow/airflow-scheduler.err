@@ -1,0 +1,1223 @@
+[2022-02-27 13:34:41 +0800] [30031] [INFO] Starting gunicorn 20.1.0
+[2022-02-27 13:34:41 +0800] [30031] [ERROR] Connection in use: ('0.0.0.0', 8793)
+[2022-02-27 13:34:41 +0800] [30031] [ERROR] Retrying in 1 second.
+[2022-02-27 13:34:42 +0800] [30031] [ERROR] Connection in use: ('0.0.0.0', 8793)
+[2022-02-27 13:34:42 +0800] [30031] [ERROR] Retrying in 1 second.
+/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/resource_tracker.py:96 UserWarning: resource_tracker: process died unexpectedly, relaunching.  Some resources might leak.
+[2022-02-27 13:34:43 +0800] [30031] [ERROR] Connection in use: ('0.0.0.0', 8793)
+[2022-02-27 13:34:43 +0800] [30031] [ERROR] Retrying in 1 second.
+[2022-02-27 13:34:44 +0800] [30031] [ERROR] Connection in use: ('0.0.0.0', 8793)
+[2022-02-27 13:34:44 +0800] [30031] [ERROR] Retrying in 1 second.
+[2022-02-27 13:34:45 +0800] [30031] [ERROR] Connection in use: ('0.0.0.0', 8793)
+[2022-02-27 13:34:45 +0800] [30031] [ERROR] Retrying in 1 second.
+[2022-02-27 13:34:46 +0800] [30031] [ERROR] Can't connect to ('0.0.0.0', 8793)
+Process DagFileProcessor6446-Process:
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1213, 'Deadlock found when trying to get lock; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 165, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 657, in process_file
+    self.update_import_errors(session, dagbag)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 541, in update_import_errors
+    session.query(errors.ImportError).filter(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3926, in delete
+    delete_op.exec_()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1697, in exec_
+    self._do_exec()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1930, in _do_exec
+    self._execute_stmt(delete_stmt)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1702, in _execute_stmt
+    self.result = self.query._execute_crud(stmt, self.mapper)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3568, in _execute_crud
+    return conn.execute(stmt, self._params)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1124, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1316, in _execute_context
+    self._handle_dbapi_exception(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1510, in _handle_dbapi_exception
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1213, 'Deadlock found when trying to get lock; try restarting transaction')
+[SQL: DELETE FROM import_error WHERE import_error.filename LIKE concat(%(filename_1)s, '%%')]
+[parameters: {'filename_1': '/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py'}]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+Process DagFileProcessor21240-Process:
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1213, 'Deadlock found when trying to get lock; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 165, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 657, in process_file
+    self.update_import_errors(session, dagbag)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 541, in update_import_errors
+    session.query(errors.ImportError).filter(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3926, in delete
+    delete_op.exec_()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1697, in exec_
+    self._do_exec()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1930, in _do_exec
+    self._execute_stmt(delete_stmt)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1702, in _execute_stmt
+    self.result = self.query._execute_crud(stmt, self.mapper)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3568, in _execute_crud
+    return conn.execute(stmt, self._params)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1124, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1316, in _execute_context
+    self._handle_dbapi_exception(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1510, in _handle_dbapi_exception
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1213, 'Deadlock found when trying to get lock; try restarting transaction')
+[SQL: DELETE FROM import_error WHERE import_error.filename LIKE concat(%(filename_1)s, '%%')]
+[parameters: {'filename_1': '/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor.py'}]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+Process DagFileProcessor39591-Process:
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1053, 'Server shutdown in progress')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/session.py", line 31, in create_session
+    yield session
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 651, in process_file
+    self._deactivate_missing_dags(session, dagbag, file_path)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 685, in _deactivate_missing_dags
+    session.query(DagModel)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 4063, in update
+    update_op.exec_()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1696, in exec_
+    self._do_pre_synchronize()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1805, in _do_pre_synchronize
+    self.matched_rows = session.execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1295, in execute
+    return self._connection_for_bind(bind, close_with_result=True).execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1124, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1316, in _execute_context
+    self._handle_dbapi_exception(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1510, in _handle_dbapi_exception
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1053, 'Server shutdown in progress')
+[SQL: SELECT dag.dag_id AS dag_dag_id 
+FROM dag 
+WHERE dag.fileloc = %(fileloc_1)s AND dag.is_active = 1 AND dag.dag_id NOT IN (%(dag_id_1)s)]
+[parameters: {'fileloc_1': '/Users/andyhsu/Desktop/airflow_tutorial/airflow/dags/download_stock_price.py', 'dag_id_1': 'Download_Stock_Price'}]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 749, in _rollback_impl
+    self.engine.dialect.do_rollback(self.connection)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/dialects/mysql/base.py", line 2513, in do_rollback
+    dbapi_connection.rollback()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 480, in rollback
+    self._read_ok_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 165, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/session.py", line 34, in create_session
+    session.rollback()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1010, in rollback
+    self.transaction.rollback()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 574, in rollback
+    util.raise_(rollback_err[1], with_traceback=rollback_err[2])
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 534, in rollback
+    t[1].rollback()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1751, in rollback
+    self._do_rollback()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1789, in _do_rollback
+    self.connection._rollback_impl()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 751, in _rollback_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1510, in _handle_dbapi_exception
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 749, in _rollback_impl
+    self.engine.dialect.do_rollback(self.connection)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/dialects/mysql/base.py", line 2513, in do_rollback
+    dbapi_connection.rollback()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 480, in rollback
+    self._read_ok_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+Process DagFileProcessor39592-Process:
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 165, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 651, in process_file
+    self._deactivate_missing_dags(session, dagbag, file_path)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 685, in _deactivate_missing_dags
+    session.query(DagModel)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 4063, in update
+    update_op.exec_()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1696, in exec_
+    self._do_pre_synchronize()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1805, in _do_pre_synchronize
+    self.matched_rows = session.execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1295, in execute
+    return self._connection_for_bind(bind, close_with_result=True).execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+Process DagFileProcessor39593-Process:
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 165, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 651, in process_file
+    self._deactivate_missing_dags(session, dagbag, file_path)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 685, in _deactivate_missing_dags
+    session.query(DagModel)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 4063, in update
+    update_op.exec_()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1696, in exec_
+    self._do_pre_synchronize()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1805, in _do_pre_synchronize
+    self.matched_rows = session.execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1295, in execute
+    return self._connection_for_bind(bind, close_with_result=True).execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+Process DagFileProcessor39594-Process:
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 165, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 651, in process_file
+    self._deactivate_missing_dags(session, dagbag, file_path)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 685, in _deactivate_missing_dags
+    session.query(DagModel)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 4063, in update
+    update_op.exec_()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1696, in exec_
+    self._do_pre_synchronize()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1805, in _do_pre_synchronize
+    self.matched_rows = session.execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1295, in execute
+    return self._connection_for_bind(bind, close_with_result=True).execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+Process DagFileProcessor39595-Process:
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 165, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 651, in process_file
+    self._deactivate_missing_dags(session, dagbag, file_path)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 685, in _deactivate_missing_dags
+    session.query(DagModel)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 4063, in update
+    update_op.exec_()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1696, in exec_
+    self._do_pre_synchronize()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1805, in _do_pre_synchronize
+    self.matched_rows = session.execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1295, in execute
+    return self._connection_for_bind(bind, close_with_result=True).execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+Process DagFileProcessor39596-Process:
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 165, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 651, in process_file
+    self._deactivate_missing_dags(session, dagbag, file_path)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/dag_processing/processor.py", line 685, in _deactivate_missing_dags
+    session.query(DagModel)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 4063, in update
+    update_op.exec_()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1696, in exec_
+    self._do_pre_synchronize()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1805, in _do_pre_synchronize
+    self.matched_rows = session.execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1295, in execute
+    return self._connection_for_bind(bind, close_with_result=True).execute(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 500, in checkout
+    rec._checkin_failed(err)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 610, in get_connection
+    self.__connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/jobs/base_job.py", line 245, in run
+    self._execute()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 628, in _execute
+    self._run_scheduler_loop()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 709, in _run_scheduler_loop
+    num_queued_tis = self._do_scheduling(session)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 782, in _do_scheduling
+    self._create_dagruns_for_dags(guard, session)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/retries.py", line 76, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/tenacity/__init__.py", line 360, in iter
+    raise retry_exc.reraise()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/tenacity/__init__.py", line 193, in reraise
+    raise self.last_attempt.result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+    return self.__get_result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/retries.py", line 85, in wrapped_function
+    return func(*args, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 847, in _create_dagruns_for_dags
+    self._create_dag_runs(query.all(), session)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3373, in all
+    return list(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3556, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3571, in _get_bind_args
+    return fn(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 500, in checkout
+    rec._checkin_failed(err)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 610, in get_connection
+    self.__connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 500, in checkout
+    rec._checkin_failed(err)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 610, in get_connection
+    self.__connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/__main__.py", line 48, in main
+    args.func(args)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/cli/commands/scheduler_command.py", line 70, in scheduler
+    _run_scheduler_job(args=args)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/cli/commands/scheduler_command.py", line 46, in _run_scheduler_job
+    job.run()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/jobs/base_job.py", line 256, in run
+    session.merge(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 2166, in merge
+    return self._merge(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 2244, in _merge
+    merged = self.query(mapper.class_).get(key[1])
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 1018, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 1135, in _get_impl
+    return db_load_fn(self, primary_key_identity)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/loading.py", line 286, in load_on_pk_identity
+    return q.one()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3490, in one
+    ret = self.one_or_none()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3459, in one_or_none
+    ret = list(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3556, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3571, in _get_bind_args
+    return fn(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 500, in checkout
+    rec._checkin_failed(err)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 610, in get_connection
+    self.__connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 632, in connect
+    self._get_server_information()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 1055, in _get_server_information
+    packet = self._read_packet()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/pymysql/connections.py", line 748, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query')
+(Background on this error at: http://sqlalche.me/e/13/e3q8)

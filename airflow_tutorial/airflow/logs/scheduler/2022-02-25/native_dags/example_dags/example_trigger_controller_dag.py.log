@@ -1,0 +1,84 @@
+[2022-02-26 03:32:54,000] {processor.py:163} INFO - Started process (PID=5323) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 03:32:54,000] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 03:32:54,000] {logging_mixin.py:109} INFO - [2022-02-26 03:32:54,000] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 03:32:54,010] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 03:32:54,016] {logging_mixin.py:109} INFO - [2022-02-26 03:32:54,016] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:32:54,019] {logging_mixin.py:109} INFO - [2022-02-26 03:32:54,019] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 03:32:54,022] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.022 seconds
+[2022-02-26 03:33:42,094] {processor.py:163} INFO - Started process (PID=5370) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 03:33:42,095] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 03:33:42,095] {logging_mixin.py:109} INFO - [2022-02-26 03:33:42,095] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 03:33:42,106] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 03:33:42,113] {logging_mixin.py:109} INFO - [2022-02-26 03:33:42,113] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:33:42,117] {logging_mixin.py:109} INFO - [2022-02-26 03:33:42,117] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 03:33:42,119] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.026 seconds
+[2022-02-26 03:52:01,189] {processor.py:163} INFO - Started process (PID=5465) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 03:52:01,189] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 03:52:01,189] {logging_mixin.py:109} INFO - [2022-02-26 03:52:01,189] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 03:52:01,199] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 03:52:01,205] {logging_mixin.py:109} INFO - [2022-02-26 03:52:01,205] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:52:01,208] {logging_mixin.py:109} INFO - [2022-02-26 03:52:01,208] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 03:52:01,211] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.022 seconds
+[2022-02-26 04:22:48,189] {processor.py:163} INFO - Started process (PID=5509) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 04:22:48,189] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 04:22:48,189] {logging_mixin.py:109} INFO - [2022-02-26 04:22:48,189] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 04:22:48,199] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 04:22:48,205] {logging_mixin.py:109} INFO - [2022-02-26 04:22:48,205] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:22:48,208] {logging_mixin.py:109} INFO - [2022-02-26 04:22:48,208] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 04:22:48,210] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.022 seconds
+[2022-02-26 04:37:40,247] {processor.py:163} INFO - Started process (PID=5544) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 04:37:40,248] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 04:37:40,248] {logging_mixin.py:109} INFO - [2022-02-26 04:37:40,248] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 04:37:40,257] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 04:37:40,264] {logging_mixin.py:109} INFO - [2022-02-26 04:37:40,263] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:37:40,266] {logging_mixin.py:109} INFO - [2022-02-26 04:37:40,266] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 04:37:40,269] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.022 seconds
+[2022-02-26 04:52:39,989] {processor.py:163} INFO - Started process (PID=5580) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 04:52:39,990] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 04:52:39,990] {logging_mixin.py:109} INFO - [2022-02-26 04:52:39,990] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 04:52:39,999] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 04:52:40,006] {logging_mixin.py:109} INFO - [2022-02-26 04:52:40,006] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:52:40,009] {logging_mixin.py:109} INFO - [2022-02-26 04:52:40,009] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 04:52:40,011] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.022 seconds
+[2022-02-26 05:07:39,661] {processor.py:163} INFO - Started process (PID=5618) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:07:39,662] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 05:07:39,662] {logging_mixin.py:109} INFO - [2022-02-26 05:07:39,662] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:07:39,672] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:07:39,678] {logging_mixin.py:109} INFO - [2022-02-26 05:07:39,678] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:07:39,681] {logging_mixin.py:109} INFO - [2022-02-26 05:07:39,681] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 05:07:39,683] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.022 seconds
+[2022-02-26 05:22:39,110] {processor.py:163} INFO - Started process (PID=5669) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:22:39,110] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 05:22:39,110] {logging_mixin.py:109} INFO - [2022-02-26 05:22:39,110] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:22:39,120] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:22:39,126] {logging_mixin.py:109} INFO - [2022-02-26 05:22:39,126] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:22:39,129] {logging_mixin.py:109} INFO - [2022-02-26 05:22:39,129] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 05:22:39,132] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.022 seconds
+[2022-02-26 05:37:40,755] {processor.py:163} INFO - Started process (PID=5711) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:37:40,756] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 05:37:40,756] {logging_mixin.py:109} INFO - [2022-02-26 05:37:40,756] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:37:40,765] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:37:40,772] {logging_mixin.py:109} INFO - [2022-02-26 05:37:40,771] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:37:40,775] {logging_mixin.py:109} INFO - [2022-02-26 05:37:40,775] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 05:37:40,777] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.022 seconds
+[2022-02-26 05:52:40,423] {processor.py:163} INFO - Started process (PID=5756) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:52:40,423] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 05:52:40,424] {logging_mixin.py:109} INFO - [2022-02-26 05:52:40,424] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:52:40,433] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 05:52:40,439] {logging_mixin.py:109} INFO - [2022-02-26 05:52:40,439] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:52:40,442] {logging_mixin.py:109} INFO - [2022-02-26 05:52:40,442] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 05:52:40,445] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.022 seconds
+[2022-02-26 06:26:32,183] {processor.py:163} INFO - Started process (PID=5794) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 06:26:32,183] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 06:26:32,183] {logging_mixin.py:109} INFO - [2022-02-26 06:26:32,183] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 06:26:32,193] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 06:26:32,199] {logging_mixin.py:109} INFO - [2022-02-26 06:26:32,199] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 06:26:32,202] {logging_mixin.py:109} INFO - [2022-02-26 06:26:32,202] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 06:26:32,205] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.022 seconds
+[2022-02-26 07:34:19,137] {processor.py:163} INFO - Started process (PID=5859) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 07:34:19,137] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py for tasks to queue
+[2022-02-26 07:34:19,137] {logging_mixin.py:109} INFO - [2022-02-26 07:34:19,137] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 07:34:19,147] {processor.py:654} INFO - DAG(s) dict_keys(['example_trigger_controller_dag']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py
+[2022-02-26 07:34:19,153] {logging_mixin.py:109} INFO - [2022-02-26 07:34:19,153] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 07:34:19,156] {logging_mixin.py:109} INFO - [2022-02-26 07:34:19,156] {dag.py:2935} INFO - Setting next_dagrun for example_trigger_controller_dag to 2021-01-01T00:00:00+00:00
+[2022-02-26 07:34:19,159] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_trigger_controller_dag.py took 0.022 seconds

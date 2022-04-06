@@ -1,0 +1,70 @@
+[2022-02-26 03:33:10,879] {processor.py:163} INFO - Started process (PID=5345) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 03:33:10,879] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-02-26 03:33:10,879] {logging_mixin.py:109} INFO - [2022-02-26 03:33:10,879] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 03:33:10,889] {processor.py:654} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 03:33:10,895] {logging_mixin.py:109} INFO - [2022-02-26 03:33:10,895] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:33:10,899] {logging_mixin.py:109} INFO - [2022-02-26 03:33:10,899] {dag.py:2935} INFO - Setting next_dagrun for latest_only to 2022-02-25T15:33:10.899788+00:00
+[2022-02-26 03:33:10,902] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py took 0.024 seconds
+[2022-02-26 03:34:00,889] {processor.py:163} INFO - Started process (PID=5403) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 03:34:00,890] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-02-26 03:34:00,890] {logging_mixin.py:109} INFO - [2022-02-26 03:34:00,890] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 03:34:00,900] {processor.py:654} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 03:34:00,907] {logging_mixin.py:109} INFO - [2022-02-26 03:34:00,907] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 03:34:00,910] {logging_mixin.py:109} INFO - [2022-02-26 03:34:00,910] {dag.py:2935} INFO - Setting next_dagrun for latest_only to 2022-02-25T15:34:00.910027+00:00
+[2022-02-26 03:34:00,912] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py took 0.024 seconds
+[2022-02-26 04:22:29,514] {processor.py:163} INFO - Started process (PID=5485) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 04:22:29,514] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-02-26 04:22:29,514] {logging_mixin.py:109} INFO - [2022-02-26 04:22:29,514] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 04:22:29,524] {processor.py:654} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 04:22:29,530] {logging_mixin.py:109} INFO - [2022-02-26 04:22:29,530] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:22:29,533] {logging_mixin.py:109} INFO - [2022-02-26 04:22:29,533] {dag.py:2935} INFO - Setting next_dagrun for latest_only to 2022-02-25T16:22:29.533855+00:00
+[2022-02-26 04:22:29,536] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py took 0.023 seconds
+[2022-02-26 04:37:57,162] {processor.py:163} INFO - Started process (PID=5556) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 04:37:57,162] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-02-26 04:37:57,162] {logging_mixin.py:109} INFO - [2022-02-26 04:37:57,162] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 04:37:57,172] {processor.py:654} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 04:37:57,178] {logging_mixin.py:109} INFO - [2022-02-26 04:37:57,178] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:37:57,181] {logging_mixin.py:109} INFO - [2022-02-26 04:37:57,181] {dag.py:2935} INFO - Setting next_dagrun for latest_only to 2022-02-25T16:37:57.181482+00:00
+[2022-02-26 04:37:57,184] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py took 0.023 seconds
+[2022-02-26 04:52:56,866] {processor.py:163} INFO - Started process (PID=5592) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 04:52:56,866] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-02-26 04:52:56,866] {logging_mixin.py:109} INFO - [2022-02-26 04:52:56,866] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 04:52:56,876] {processor.py:654} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 04:52:56,882] {logging_mixin.py:109} INFO - [2022-02-26 04:52:56,882] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 04:52:56,885] {logging_mixin.py:109} INFO - [2022-02-26 04:52:56,885] {dag.py:2935} INFO - Setting next_dagrun for latest_only to 2022-02-25T16:52:56.885688+00:00
+[2022-02-26 04:52:56,888] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py took 0.023 seconds
+[2022-02-26 05:07:56,636] {processor.py:163} INFO - Started process (PID=5630) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:07:56,636] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-02-26 05:07:56,636] {logging_mixin.py:109} INFO - [2022-02-26 05:07:56,636] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:07:56,646] {processor.py:654} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:07:56,652] {logging_mixin.py:109} INFO - [2022-02-26 05:07:56,652] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:07:56,655] {logging_mixin.py:109} INFO - [2022-02-26 05:07:56,655] {dag.py:2935} INFO - Setting next_dagrun for latest_only to 2022-02-25T17:07:56.655842+00:00
+[2022-02-26 05:07:56,658] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py took 0.022 seconds
+[2022-02-26 05:22:56,307] {processor.py:163} INFO - Started process (PID=5682) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:22:56,307] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-02-26 05:22:56,308] {logging_mixin.py:109} INFO - [2022-02-26 05:22:56,308] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:22:56,317] {processor.py:654} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:22:56,324] {logging_mixin.py:109} INFO - [2022-02-26 05:22:56,324] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:22:56,327] {logging_mixin.py:109} INFO - [2022-02-26 05:22:56,327] {dag.py:2935} INFO - Setting next_dagrun for latest_only to 2022-02-25T17:22:56.327115+00:00
+[2022-02-26 05:22:56,329] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py took 0.022 seconds
+[2022-02-26 05:37:57,583] {processor.py:163} INFO - Started process (PID=5734) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:37:57,583] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-02-26 05:37:57,583] {logging_mixin.py:109} INFO - [2022-02-26 05:37:57,583] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:37:57,593] {processor.py:654} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:37:57,599] {logging_mixin.py:109} INFO - [2022-02-26 05:37:57,599] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:37:57,602] {logging_mixin.py:109} INFO - [2022-02-26 05:37:57,602] {dag.py:2935} INFO - Setting next_dagrun for latest_only to 2022-02-25T17:37:57.602467+00:00
+[2022-02-26 05:37:57,605] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py took 0.023 seconds
+[2022-02-26 05:52:57,227] {processor.py:163} INFO - Started process (PID=5768) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:52:57,227] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-02-26 05:52:57,227] {logging_mixin.py:109} INFO - [2022-02-26 05:52:57,227] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:52:57,237] {processor.py:654} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 05:52:57,244] {logging_mixin.py:109} INFO - [2022-02-26 05:52:57,243] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 05:52:57,247] {logging_mixin.py:109} INFO - [2022-02-26 05:52:57,247] {dag.py:2935} INFO - Setting next_dagrun for latest_only to 2022-02-25T17:52:57.247002+00:00
+[2022-02-26 05:52:57,249] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py took 0.023 seconds
+[2022-02-26 06:57:28,950] {processor.py:163} INFO - Started process (PID=5814) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 06:57:28,951] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py for tasks to queue
+[2022-02-26 06:57:28,951] {logging_mixin.py:109} INFO - [2022-02-26 06:57:28,951] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 06:57:28,961] {processor.py:654} INFO - DAG(s) dict_keys(['latest_only']) retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py
+[2022-02-26 06:57:28,967] {logging_mixin.py:109} INFO - [2022-02-26 06:57:28,967] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-26 06:57:28,970] {logging_mixin.py:109} INFO - [2022-02-26 06:57:28,970] {dag.py:2935} INFO - Setting next_dagrun for latest_only to 2022-02-25T18:57:28.970256+00:00
+[2022-02-26 06:57:28,973] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/example_latest_only.py took 0.023 seconds

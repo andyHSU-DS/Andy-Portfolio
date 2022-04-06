@@ -1,0 +1,60 @@
+[2022-02-26 03:32:40,567] {processor.py:163} INFO - Started process (PID=5313) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 03:32:40,568] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 03:32:40,568] {logging_mixin.py:109} INFO - [2022-02-26 03:32:40,568] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 03:32:40,576] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 03:32:40,576] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.009 seconds
+[2022-02-26 03:33:30,679] {processor.py:163} INFO - Started process (PID=5360) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 03:33:30,680] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 03:33:30,680] {logging_mixin.py:109} INFO - [2022-02-26 03:33:30,680] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 03:33:30,689] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 03:33:30,689] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.010 seconds
+[2022-02-26 03:51:35,520] {processor.py:163} INFO - Started process (PID=5411) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 03:51:35,521] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 03:51:35,521] {logging_mixin.py:109} INFO - [2022-02-26 03:51:35,521] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 03:51:35,529] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 03:51:35,529] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.009 seconds
+[2022-02-26 04:22:36,261] {processor.py:163} INFO - Started process (PID=5497) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 04:22:36,261] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 04:22:36,261] {logging_mixin.py:109} INFO - [2022-02-26 04:22:36,261] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 04:22:36,269] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 04:22:36,269] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.009 seconds
+[2022-02-26 04:37:28,843] {processor.py:163} INFO - Started process (PID=5533) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 04:37:28,843] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 04:37:28,843] {logging_mixin.py:109} INFO - [2022-02-26 04:37:28,843] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 04:37:28,851] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 04:37:28,852] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.009 seconds
+[2022-02-26 04:52:28,576] {processor.py:163} INFO - Started process (PID=5571) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 04:52:28,576] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 04:52:28,576] {logging_mixin.py:109} INFO - [2022-02-26 04:52:28,576] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 04:52:28,584] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 04:52:28,584] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.009 seconds
+[2022-02-26 05:07:28,323] {processor.py:163} INFO - Started process (PID=5610) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:07:28,323] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 05:07:28,323] {logging_mixin.py:109} INFO - [2022-02-26 05:07:28,323] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:07:28,331] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:07:28,332] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.009 seconds
+[2022-02-26 05:22:28,170] {processor.py:163} INFO - Started process (PID=5661) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:22:28,170] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 05:22:28,171] {logging_mixin.py:109} INFO - [2022-02-26 05:22:28,170] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:22:28,178] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:22:28,179] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.009 seconds
+[2022-02-26 05:37:29,623] {processor.py:163} INFO - Started process (PID=5700) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:37:29,623] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 05:37:29,624] {logging_mixin.py:109} INFO - [2022-02-26 05:37:29,624] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:37:29,631] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:37:29,632] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.009 seconds
+[2022-02-26 05:52:28,256] {processor.py:163} INFO - Started process (PID=5748) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:52:28,257] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 05:52:28,257] {logging_mixin.py:109} INFO - [2022-02-26 05:52:28,257] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:52:28,264] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 05:52:28,265] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.009 seconds
+[2022-02-26 06:10:58,259] {processor.py:163} INFO - Started process (PID=5784) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 06:10:58,259] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 06:10:58,259] {logging_mixin.py:109} INFO - [2022-02-26 06:10:58,259] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 06:10:58,267] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 06:10:58,268] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.009 seconds
+[2022-02-26 07:14:57,210] {processor.py:163} INFO - Started process (PID=5833) to work on /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 07:14:57,210] {processor.py:642} INFO - Processing file /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2022-02-26 07:14:57,210] {logging_mixin.py:109} INFO - [2022-02-26 07:14:57,210] {dagbag.py:500} INFO - Filling up the DagBag from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 07:14:57,218] {processor.py:656} WARNING - No viable dags retrieved from /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py
+[2022-02-26 07:14:57,218] {processor.py:171} INFO - Processing /Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/example_dags/plugins/workday.py took 0.009 seconds

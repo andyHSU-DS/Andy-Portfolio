@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/psutil/_psosx.py", line 365, in catch_zombie
+    yield
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/psutil/_psosx.py", line 431, in cmdline
+    return cext.proc_cmdline(self.pid)
+ProcessLookupError: [Errno 3] assume no such process (originated from sysctl(KERN_PROCARGS2) -> EINVAL)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/andyhsu/tutorial-env/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/__main__.py", line 48, in main
+    args.func(args)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/cli/commands/webserver_command.py", line 482, in webserver
+    monitor_gunicorn(gunicorn_master_proc.pid)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/cli/commands/webserver_command.py", line 447, in monitor_gunicorn
+    GunicornMonitor(
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/cli/commands/webserver_command.py", line 212, in start
+    self._check_workers()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/cli/commands/webserver_command.py", line 227, in _check_workers
+    num_ready_workers_running = self._get_num_ready_workers_running()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/cli/commands/webserver_command.py", line 142, in _get_num_ready_workers_running
+    ready_workers = [proc for proc in workers if ready_prefix_on_cmdline(proc)]
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/cli/commands/webserver_command.py", line 142, in <listcomp>
+    ready_workers = [proc for proc in workers if ready_prefix_on_cmdline(proc)]
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/airflow/cli/commands/webserver_command.py", line 135, in ready_prefix_on_cmdline
+    cmdline = proc.cmdline()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/psutil/__init__.py", line 677, in cmdline
+    return self._proc.cmdline()
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/psutil/_psosx.py", line 344, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/psutil/_psosx.py", line 431, in cmdline
+    return cext.proc_cmdline(self.pid)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/contextlib.py", line 135, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/andyhsu/tutorial-env/lib/python3.9/site-packages/psutil/_psosx.py", line 378, in catch_zombie
+    raise AccessDenied(proc.pid, proc._name)
+psutil.AccessDenied: psutil.AccessDenied (pid=39409)
