@@ -8,6 +8,12 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
 
+import plotly.express as px
+import plotly.graph_objects as go
+import plotly.io as pio
+pio.renderers.default = 'notebook'
+from plotly.subplots import make_subplots
+
 import re
 
 class PLG:
@@ -122,3 +128,51 @@ class PLG:
         非敵對主場_FT = round((N_target_Home['罰球(進)'].sum()/N_target_Home['罰球(出手)'].sum())*100,2)
         data_frame_list.append([self.name,'非'+target_team_主場,非敵對主場_FT])
         return pd.DataFrame(data_frame_list)
+
+    def 視覺化(self,df):
+        #使用pivot_table將資料整理成可以視覺化的格式
+        target_team_主場 = self.target_team + '主場'
+        非target_team_主場 = '非'+self.target_team + '主場'
+        df = df.pivot_table(index=0,columns=1,values=2).reset_index()
+
+        color_dictionary  = {
+            '鋼鐵人' : '#1c8cf2',
+            '攻城獅' : '#2b185c',
+            '夢想家' : '#8ee06b',
+            '國王'   : '#edc754',
+            '領航猿' : '#d57715',
+            '勇士'   : '#0d5992'
+        }
+
+        df['color'] = df[0].map(color_dictionary)
+        df['差距'] = df[target_team_主場] - df[非target_team_主場]
+        df['差距'] = df['差距'].apply(lambda x:abs(x))
+
+
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(
+                    x = df[target_team_主場],
+                    y = df[非target_team_主場],
+                    mode = 'markers',
+                    marker=dict(
+                        color = df['color'],
+                        opacity=0.5,
+                        size = df['差距']*5
+                    ),
+                    text = df[0],
+                    hovertemplate = 非target_team_主場 + ': %{y}'+'<br>' + target_team_主場 + ': %{x}'+'<br>球隊: %{text}'
+                ))
+        fig.update_layout(
+                    title = '各隊罰球命中率比較',
+                    xaxis=dict(
+                        title= target_team_主場,
+                        showgrid = False
+                    ),
+                    yaxis=dict(
+                        title= 非target_team_主場,
+                        showgrid = False
+                    ),
+                    paper_bgcolor='rgb(243, 243, 233)',
+                    plot_bgcolor='rgb(243, 243, 233)',
+                )
+        fig.show()
