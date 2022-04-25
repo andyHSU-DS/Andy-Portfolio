@@ -12,8 +12,9 @@ import re
 
 class PLG:
     #定義隊名跟url
-    def __init__(self,team_name):
-        self.name = team_name
+    def __init__(self,team_name,target_team = '夢想家'):
+        self.name             = team_name
+        self.target_team      = target_team
         if '勇士' in self.name:
             self.url = 'https://pleagueofficial.com/team/1'
         elif '攻城獅' in self.name:
@@ -102,7 +103,22 @@ class PLG:
 
     #將match資訊的return放入得到我要的資料
     def 資料處理(self,df):
-        df['夢想家主場'] = df['主隊'].apply(lambda x: 'Y' if x == '夢想家' else 'N')
+        #定義對手球隊的主場 
+        target_team_主場 = self.target_team + '主場'
+        df[target_team_主場] = df['主隊'].apply(lambda x: 'Y' if x == self.target_team else 'N')
         df['罰球(進)']   = df['罰球'].apply(lambda x: int(x.split('-')[0]))
         df['罰球(出手)']   = df['罰球'].apply(lambda x: int(x.split('-')[1]))
         return df
+
+    #將各隊在不同主場的表現統整，輸入為資料處理的output
+    def 資料彙整(self,df):
+        data_frame_list  = []
+        target_team_主場 = self.target_team + '主場'
+        target_Home = df[df[target_team_主場] == 'Y']
+        敵對主場_FT = round((target_Home['罰球(進)'].sum()/target_Home['罰球(出手)'].sum())*100,2)
+        data_frame_list.append([self.name,target_team_主場,敵對主場_FT])
+        N_target_Home = df[df[target_team_主場] == 'N']
+        N_target_Home['罰球(進)'].sum()/N_target_Home['罰球(出手)'].sum()
+        非敵對主場_FT = round((N_target_Home['罰球(進)'].sum()/N_target_Home['罰球(出手)'].sum())*100,2)
+        data_frame_list.append([self.name,'非'+target_team_主場,非敵對主場_FT])
+        return pd.DataFrame(self.data_frame_list)
