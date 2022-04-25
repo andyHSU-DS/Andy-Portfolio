@@ -146,7 +146,7 @@ class PLG:
 
         df['color'] = df[0].map(color_dictionary)
         df['差距'] = df[target_team_主場] - df[非target_team_主場]
-        df['差距'] = df['差距'].apply(lambda x:abs(x) if abs(x) >1 else 5)
+        df['差距'] = df['差距'].apply(lambda x:abs(x) if abs(x) >1 else 1)
         print(df['差距'])
 
 
