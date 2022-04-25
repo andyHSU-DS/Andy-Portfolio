@@ -112,7 +112,7 @@ class PLG:
 
     #將各隊在不同主場的表現統整，輸入為資料處理的output
     def 資料彙整(self,df):
-        data_frame_list  = []
+        data_frame_list = []
         target_team_主場 = self.target_team + '主場'
         target_Home = df[df[target_team_主場] == 'Y']
         敵對主場_FT = round((target_Home['罰球(進)'].sum()/target_Home['罰球(出手)'].sum())*100,2)
@@ -121,4 +121,4 @@ class PLG:
         N_target_Home['罰球(進)'].sum()/N_target_Home['罰球(出手)'].sum()
         非敵對主場_FT = round((N_target_Home['罰球(進)'].sum()/N_target_Home['罰球(出手)'].sum())*100,2)
         data_frame_list.append([self.name,'非'+target_team_主場,非敵對主場_FT])
-        return pd.DataFrame(self.data_frame_list)
+        return pd.DataFrame(data_frame_list)
