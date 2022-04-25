@@ -146,7 +146,8 @@ class PLG:
 
         df['color'] = df[0].map(color_dictionary)
         df['差距'] = df[target_team_主場] - df[非target_team_主場]
-        df['差距'] = df['差距'].apply(lambda x:abs(x))
+        df['差距'] = df['差距'].apply(lambda x:abs(x) if abs(x) >1 else 5)
+        print(df['差距'])
 
 
         fig = go.Figure()
@@ -163,7 +164,7 @@ class PLG:
                     hovertemplate = 非target_team_主場 + ': %{y}'+'<br>' + target_team_主場 + ': %{x}'+'<br>球隊: %{text}'
                 ))
         fig.update_layout(
-                    title = '各隊罰球命中率比較',
+                    title = target_team_主場+'各隊罰球命中率比較',
                     xaxis=dict(
                         title= target_team_主場,
                         showgrid = False
