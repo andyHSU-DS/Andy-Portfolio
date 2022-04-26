@@ -18,7 +18,7 @@ import re
 
 class PLG:
     #定義隊名跟url
-    def __init__(self,team_name = '鋼鐵人',target_team = '夢想家'):
+    def __init__(self,team_name,target_team):
         self.name             = team_name
         self.target_team      = target_team
         if '勇士' in self.name:
@@ -132,8 +132,8 @@ class PLG:
 
 #繼承PLG        
 class PLG_Graph(PLG):
-    def __init__(self,df):
-        super().__init__()
+    def __init__(self,df,team_name,target_team):
+        super().__init__(team_name,target_team)
         self.df  = df
         
     def 視覺化(self):
