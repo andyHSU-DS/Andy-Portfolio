@@ -9,14 +9,19 @@ from selenium.webdriver.common.keys import Keys
 
 import re
 
-from module.module import PLG
+from module.module_copy import PLG, PLG_Graph
 
 data_frame_list = pd.DataFrame()
-for x in ['鋼鐵人','攻城獅','領航猿','國王','勇士']:
-    team          = PLG(x)
-    team_info     = team.get_team_info()
-    matchup       = team.matchup_and_host_info()
-    team_完整_info = team.match資訊(team_info, matchup)
-    整理完成資料    = team.資料處理(team_完整_info)
-    各隊最終資料    = team.資料彙整(整理完成資料)
-    data_frame_list = data_frame_list.append(各隊最終資料)
+all_team  = ['鋼鐵人','攻城獅','領航猿','國王','勇士','夢想家']
+for a_team in all_team:
+    for b_team in all_team:
+            team          = PLG(team_name = b_team,target_team = a_team)
+            team_info     = team.get_team_info()
+            matchup       = team.matchup_and_host_info()
+            team_完整_info = team.match資訊(team_info, matchup)
+            整理完成資料    = team.資料處理(team_完整_info)
+            各隊最終資料    = team.資料彙整(整理完成資料)
+            data_frame_list = data_frame_list.append(各隊最終資料)
+    print(a_team)
+    Graph_DF = PLG_Graph(df = data_frame_list, team_name = 'abc', target_team = a_team)
+    Graph_DF.視覺化()
