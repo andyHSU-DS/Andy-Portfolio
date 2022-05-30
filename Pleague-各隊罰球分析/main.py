@@ -25,3 +25,5 @@ for a_team in all_team:
     print(a_team)
     Graph_DF = PLG_Graph(df = data_frame_list, team_name = 'abc', target_team = a_team)
     Graph_DF.視覺化()
+
+data_frame_list.to_csv('output/Final_Output.csv',index=False,header=True,encoding='utf-8-sig')
